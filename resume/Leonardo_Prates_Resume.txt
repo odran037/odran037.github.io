@@ -73,6 +73,6 @@ Joel Rice - (702)806-9398
 
 Download
 
-HTM: https://dl.dropboxusercontent.com/u/2531374/Resume/Leonardo_Prates_Resume.htm
-PDF: https://dl.dropboxusercontent.com/u/2531374/Resume/Leonardo_Prates_Resume.pdf
-TXT: https://dl.dropboxusercontent.com/u/2531374/Resume/Leonardo_Prates_Resume.txt
+HTM: http://odran037.github.io/resume/
+PDF: http://odran037.github.io/resume/Leonardo_Prates_Resume.pdf
+TXT: http://odran037.github.io/resume/Leonardo_Prates_Resume.txt
