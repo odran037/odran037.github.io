@@ -1,4 +1,4 @@
-#       Fissile Isotope
+#Fissile Isotope
 
 ```
 ╔═══════════════════════════════╗   
