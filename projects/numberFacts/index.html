@@ -20,18 +20,11 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <base href="/">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
-  <body ng-controller="mainController">
+  <body>
 
     <div class="site-wrapper">
 
@@ -39,29 +32,7 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"><span class="fa fa-cogs"></span> Number Facts</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Math</a></li>
-                  <li><a href="trivia.html">Trivia</a></li>
-                  <li><a href="date.html">Date</a></li>
-                  <li><a href="about.html"><span class="fa fa-question"></span></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Math</h1>
-            <p class="lead">
-              <form role="search">
-                <input type="number" ng-model="facts" placeholder="Enter a number" ng-change="getMathFacts()" class="btn-default">
-              </form>
-            </p>
-            <p class="lead">{{factData}}</p>
-          </div>
+          <div ng-view></div>
 
           <div class="mastfoot">
             <div class="inner">
@@ -75,7 +46,7 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript
+    <!-- Bootstrap
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -83,10 +54,26 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- // -->
+
+    <!-- Angular Core -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.js"></script>
-    <script src="js/mathApp.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <!-- // -->
+
+    <!-- Route -->
+    <script src="js/route.js"></script>
+    <!-- // -->
+
+    <!-- Controllers -->
     <script src="js/mathController.js"></script>
-    <script src="js/mathService.js"></script>
+    <script src="js/triviaController.js"></script>
+    <script src="js/dateController.js"></script>
+    <!-- // -->
+
+    <!-- Service -->
+    <script src="js/mainService.js"></script>
+    <!-- // -->
+
   </body>
 </html>

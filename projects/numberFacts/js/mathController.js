@@ -1,10 +1,10 @@
 var app = angular.module('numFacts');
 
-app.controller('mainController', function($scope, mainService){
+app.controller('mathController', function($scope, mainService){
 
   $scope.getMathFacts = function() {
 
-    mainService.getData($scope.facts).then(function(response) {
+    mainService.getMathData($scope.facts).then(function(response) {
 
       $scope.factData = response;
 
