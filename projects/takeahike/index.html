@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="app">
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body ng-controller="controller">
+
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">TAKE<span class="title-letter">A</span>HIKE</h1>
+							<p>Trails API project</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+							
+								Prologue's nav expects links in one of two formats:
+								
+								1. Hash link (scrolls to a different section within the page)
+								
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+								<li><a href="#hiking" id="hiking-link" class="skel-layers-ignoreHref"><span class="icon fa-arrow-up">Hiking</span></a></li>
+								<li><a href="#mtb" id="mtb-link" class="skel-layers-ignoreHref"><span class="icon fa-bicycle">Mountain Biking</span></a></li>
+								<li><a href="#campgrounds" id="campgrounds-link" class="skel-layers-ignoreHref"><span class="icon fa-chevron-up">Campgrounds</span></a></li>
+								<li><a href="#caving" id="caving-link" class="skel-layers-ignoreHref"><span class="icon fa-exclamation-triangle">Caving</span></a></li>
+								<li><a href="#snow" id="snow-link" class="skel-layers-ignoreHref"><span class="icon fa-asterisk">Snow Sports</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-question-circle">About</span></a></li>
+							</ul>
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Take <strong>A</strong> hike!</h2>
+								<p>Outdoor Activity Finder</p>
+							</header>
+							
+							<footer>
+								<a href="#hiking" class="button scrolly">Begin</a>
+							</footer>
+
+						</div>
+					</section>
+					
+				<!-- Hiking -->
+					<section id="hiking" class="four">
+						<div class="container">
+					
+							<header>
+								<h2>Hiking</h2>
+							</header>
+
+				      <table>
+				        <thead>
+				          <tr>
+				            <th>Name</th>
+				            <th>City</th>
+				            <th>State</th>
+				            <th>Lat / Lon</th>
+				            <th>Link</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr ng-repeat="detail in hikingData">
+				            <td>{{ detail.name }}</td>
+				            <td>{{ detail.city }}</td>
+				            <td>{{ detail.state }}</td>
+				            <td>{{ detail.lat }}<br>{{ detail.lon }}</td>
+				            <td>
+				              <div ng-repeat="activity in detail.activities | hikingFilter">
+				                <p><a ng-href="{{ activity.url }}" target="_blank">Info</a></p>
+				              </div>
+				            </td>
+				          </tr>
+				        </tbody>
+				      </table>
+
+				      <footer>
+								<a href="#mtb" class="button scrolly">Mountain Biking</a>
+							</footer>
+						</div>
+					</section>
+
+				<!-- Mountain Biking -->
+					<section id="mtb" class="two">
+						<div class="container">
+					
+							<header>
+								<h2>Mountain Biking</h2>
+							</header>
+
+				      <table>
+				        <thead>
+				          <tr>
+				            <th>Name</th>
+				            <th>City</th>
+				            <th>State</th>
+				            <th>Lat / Lon</th>
+				            <th>Link</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr ng-repeat="detail in mtbData">
+				            <td>{{ detail.name }}</td>
+				            <td>{{ detail.city }}</td>
+				            <td>{{ detail.state }}</td>
+				            <td>{{ detail.lat }}<br>{{ detail.lon }}</td>
+				            <td>
+				              <div ng-repeat="activity in detail.activities | mtbFilter">
+				                <p><a ng-href="{{ activity.url }}" target="_blank">Info</a></p>
+				              </div>
+				            </td>
+				          </tr>
+				        </tbody>
+				      </table>
+
+				      <footer>
+								<a href="#campgrounds" class="button scrolly">Campgrounds</a>
+							</footer>
+						</div>
+					</section>
+				<!-- Campgrounds -->
+					<section id="campgrounds" class="four">
+						<div class="container">
+					
+							<header>
+								<h2>Campgrounds</h2>
+							</header>
+
+				      <table>
+				        <thead>
+				          <tr>
+				            <th>Name</th>
+				            <th>City</th>
+				            <th>State</th>
+				            <th>Lat / Lon</th>
+				            <th>Link</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr ng-repeat="detail in campgroundData">
+				            <td>{{ detail.name }}</td>
+				            <td>{{ detail.city }}</td>
+				            <td>{{ detail.state }}</td>
+				            <td>{{ detail.lat }}<br>{{ detail.lon }}</td>
+				            <td>
+				              <div ng-repeat="activity in detail.activities | campgroundFilter">
+				                <p><a ng-href="{{ activity.url }}" target="_blank">Info</a></p>
+				              </div>
+				            </td>
+				          </tr>
+				        </tbody>
+				      </table>
+
+				      <footer>
+								<a href="#caving" class="button scrolly">Caving</a>
+							</footer>
+						</div>
+					</section>
+				<!-- Caving -->
+					<section id="caving" class="two">
+						<div class="container">
+					
+							<header>
+								<h2>Caving</h2>
+							</header>
+
+				      <table>
+				        <thead>
+				          <tr>
+				            <th>Name</th>
+				            <th>City</th>
+				            <th>State</th>
+				            <th>Lat / Lon</th>
+				            <th>Link</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr ng-repeat="detail in cavingData">
+				            <td>{{ detail.name }}</td>
+				            <td>{{ detail.city }}</td>
+				            <td>{{ detail.state }}</td>
+				            <td>{{ detail.lat }}<br>{{ detail.lon }}</td>
+				            <td>
+				              <div ng-repeat="activity in detail.activities | cavingFilter">
+				                <p><a ng-href="{{ activity.url }}" target="_blank">Info</a></p>
+				              </div>
+				            </td>
+				          </tr>
+				        </tbody>
+				      </table>
+
+				      <footer>
+								<a href="#snow" class="button scrolly">Snow Sports</a>
+							</footer>
+						</div>
+					</section>
+				<!-- Snow Sports -->
+					<section id="snow" class="four">
+						<div class="container">
+					
+							<header>
+								<h2>Snow Sports</h2>
+							</header>
+
+				      <table>
+				        <thead>
+				          <tr>
+				            <th>Name</th>
+				            <th>City</th>
+				            <th>State</th>
+				            <th>Lat / Lon</th>
+				            <th>Link</th>
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr ng-repeat="detail in snowData">
+				            <td>{{ detail.name }}</td>
+				            <td>{{ detail.city }}</td>
+				            <td>{{ detail.state }}</td>
+				            <td>{{ detail.lat }}<br>{{ detail.lon }}</td>
+				            <td>
+				              <div ng-repeat="activity in detail.activities | snowFilter">
+				                <p><a ng-href="{{ activity.url }}" target="_blank">Info</a></p>
+				              </div>
+				            </td>
+				          </tr>
+				        </tbody>
+				      </table>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="two">
+						<div class="container">
+
+							<header>
+								<h2>About</h2>
+							</header>
+
+							<p>A simple school project to consume the Trails API using Angular JS.</p>
+
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li><span class="title-footer">TAKE<span class="title-letter-footer">A</span>HIKE</span></li><li>Built with Angular</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				
+			</div>
+
+		<!-- Angular -->
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    	<script src="js/app.js"></script>
+	    <script src="js/controller.js"></script>
+  	  <script src="js/service.js"></script>
+	</body>
+</html>
