@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spell Hands</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div ng-app class="container">
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">&nbsp;<input type="button" id="run" value="Save Image"/>
+      <h1 id="widget">{{yourName}}</h1>
+      <br>
+    </div>
+    <div id="img-out"></div>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js'></script>
+    <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src='https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js'></script>
+    <script src='http://www.nihilogic.dk/labs/canvas2image/base64.js'></script>
+    <script src='http://www.nihilogic.dk/labs/canvas2image/canvas2image.js'></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

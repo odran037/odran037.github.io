@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Hands';
+  src:
+    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.ttf') format('truetype');
+}
+
+
+#header p {
+  margin: 0.5em 0 0 0;
+  font-size: 9.5em;
+}
+.handsign {
+  font-family: 'Hands';
+  font-weight: 300;
+}
+
+
+.dictionary-list {
+  font-family: 'Verdana';
+}
+
+.dictionary-list ul {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+
+.dictionary-list li {
+  float: left;
+  margin: 20px 20px 0 0;
+}
+
+.dictionary-list li a {
+  margin: 0 4px;
+  color: #555;
+  padding: 10px 20px 0 0;
+  font-size:16px;
+  font-weight: bold;
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.center {
+  text-align: center;
+}
+
+#widget {
+  font-family: 'Hands';
+  font-weight: 400;
+  font-size: 9.5em;
+  margin: 100px;
+}
