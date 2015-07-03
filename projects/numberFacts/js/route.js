@@ -1,6 +1,6 @@
-var app = angular.module('numFacts', ['ngRoute']);
+angular.module('numFacts', ['ngRoute'])
 
-app.config(function($routeProvider/*, $locationProvider*/) {
+.config(function($routeProvider/*, $locationProvider*/) {
 
   $routeProvider
     .when('/', {

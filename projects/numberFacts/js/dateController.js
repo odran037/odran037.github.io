@@ -1,6 +1,6 @@
-var app = angular.module('numFacts');
+angular.module('numFacts')
 
-app.controller('dateController', function($scope, mainService){
+.controller('dateController', function($scope, mainService){
 
   $scope.getMathFacts = function() {
 

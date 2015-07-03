@@ -1,6 +1,6 @@
-var app = angular.module('numFacts');
+angular.module('numFacts')
 
-app.controller('triviaController', function($scope, mainService){
+.controller('triviaController', function($scope, mainService){
 
   $scope.getMathFacts = function() {
 

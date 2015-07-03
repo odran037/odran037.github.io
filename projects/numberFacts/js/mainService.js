@@ -1,6 +1,6 @@
-var app = angular.module('numFacts');
+angular.module('numFacts')
 
-app.service('mainService', function($http, $q){
+.service('mainService', function($http, $q){
 
   this.getMathData = function(number) {
 
@@ -49,6 +49,5 @@ app.service('mainService', function($http, $q){
     return dfd.promise;
 
   }
-
 
 });
