@@ -7,24 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Video Background Hack */
-
-	.video-bg {
-		background-image: url('../../images/bicycle-parts.jpg');
-		background-repeat: repeat;
-		position: absolute;
-		top: 0;
-		left: 0;
-/*		width: 100%;
-		height: 100%;*/
-		z-index: -10;
-	}
-	video {
-/*		width: 100%;
-		height: 100%;*/
-		object-fit: cover;
-	}
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2482,12 +2464,11 @@
 /* Header */
 
 	#header {
-		/*background-color: #1f1815;*/
-		-moz-box-background-color: rgba(0,0,0,0.7);
-		-webkit-background-color: rgba(0,0,0,0.7);
-		background-color: rgba(0,0,0,0.7);
+		background-color: #1f1815;
+		/*background-color: rgba(0,0,0,0.7);*/
 		background-attachment: scroll,								fixed;
 		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
+		background-image: url('../../images/bicycle-parts.jpg');
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
