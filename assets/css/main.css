@@ -2483,6 +2483,8 @@
 
 	#header {
 		/*background-color: #1f1815;*/
+		-moz-box-background-color: rgba(0,0,0,0.7);
+		-webkit-background-color: rgba(0,0,0,0.7);
 		background-color: rgba(0,0,0,0.7);
 		background-attachment: scroll,								fixed;
 		/*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
