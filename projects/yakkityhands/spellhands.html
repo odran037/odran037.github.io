@@ -13,6 +13,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="spellhands/css/style.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   </head>
   <body ng-controller="main" class="no-sidebar">
@@ -44,9 +45,17 @@
             <div id="content">
               <!-- Post -->
                 <article>
-                  <iframe src="spell-hands/index.html" width="100%" height="700px">
+<!--                   <iframe src="spell-hands/index.html" width="100%" height="700px">
                     <p>Your browser does not support iframes.</p>
-                  </iframe>
+                  </iframe> -->
+
+                  <div ng-app class="container">
+                    <input type="text" ng-model="yourName" placeholder="Enter a name here">&nbsp;<input type="button" id="run" value="Save Image"/>
+                    <h1 id="widget">{{yourName}}</h1>
+                    <br>
+                  </div>
+                  <div id="img-out"></div>
+                  
                 </article>
             </div>
           </div>
@@ -89,12 +98,10 @@
                     <div class="6u 12u(mobile)">
                       <ul class="icons">
                         <li class="icon fa-home">
-                          560 S 100 W St<br />
-                          Provo, UT 84601<br />
-                          USA
+                          Bay Area, CA
                         </li>
                         <li class="icon fa-phone">
-                          (855) 867-5309
+                          7zero2 - 4nine8 - 0threetwo7
                         </li>
                         <li class="icon fa-envelope">
                           hello at this domain
@@ -136,13 +143,14 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-
       <script src="assets/js/angular.min.js"></script>
-
-
       <script src="assets/js/app.js"></script>
       <script src="assets/js/controller.js"></script>
       <script src="assets/js/service.js"></script>
+      <script src='https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js'></script>
+      <script src='http://www.nihilogic.dk/labs/canvas2image/base64.js'></script>
+      <script src='http://www.nihilogic.dk/labs/canvas2image/canvas2image.js'></script>
+      <script src="spellhands/js/index.js"></script>
 
   </body>
 </html>
