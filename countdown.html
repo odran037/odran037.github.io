@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>We are coming!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/cyborg/bootstrap.min.css">
+  <style>
+  body {
+    background: url(http://www.nripulse.com/wp-content/uploads/2015/05/flighttoindia.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 3%;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 id="countdown"></h1>
+        <h3>Until we leave California.</h3>
+        <h1>We can't wait to see you guys!</h1>
+        <h3>From Hannah, Stacy and Leo</h3>
+      </div>
+    </div>
+  </div>
+  <script>
+  function CountDownTimer(dt) {
+    var output = document.getElementById('countdown');
+    var end = new Date(dt);
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+      var now = new Date();
+      var distance = end - now;
+      var days = Math.floor(distance / _day);
+      var hours = Math.floor((distance % _day) / _hour);
+      var minutes = Math.floor((distance % _hour) / _minute);
+      var seconds = Math.floor((distance % _minute) / _second);
+      if (distance < 0) {
+        clearInterval(timer);
+        output.innerHTML = 'EXPIRED!';
+        return;
+      }
+      output.innerHTML = days + ' days<br>';
+      output.innerHTML += hours + ' hours<br>';
+      output.innerHTML += minutes + ' minutes<br>';
+      output.innerHTML += seconds + ' seconds';
+    }
+    timer = setInterval(showRemaining, 1000);
+  }
+
+  CountDownTimer('10/14/2015 7:00 AM');
+  </script>
+</body>
+</html>
