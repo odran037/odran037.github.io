@@ -1,63 +1,274 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>We are coming!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/cyborg/bootstrap.min.css">
-  <style>
-  body {
-    background: url(http://www.nripulse.com/wp-content/uploads/2015/05/flighttoindia.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 3%;
-  }
-  </style>
-</head>
-<body>
-  <div class="container-fluid text-center">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 id="countdown"></h1>
-        <h3>Until we leave California.</h3>
-        <h1>We can't wait to see you guys!</h1>
-        <h3>From Hannah, Stacy and Leo</h3>
-      </div>
-    </div>
-  </div>
-  <script>
-  function CountDownTimer(dt) {
-    var output = document.getElementById('countdown');
-    var end = new Date(dt);
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
-
-    function showRemaining() {
-      var now = new Date();
-      var distance = end - now;
-      var days = Math.floor(distance / _day);
-      var hours = Math.floor((distance % _day) / _hour);
-      var minutes = Math.floor((distance % _hour) / _minute);
-      var seconds = Math.floor((distance % _minute) / _second);
-      if (distance < 0) {
-        clearInterval(timer);
-        output.innerHTML = 'EXPIRED!';
-        return;
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>We are coming!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/cyborg/bootstrap.min.css">
+    <style>
+      body {
+        background: url(images/flight.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 3%;
+        color: #fff !important;
       }
-      output.innerHTML = days + ' days<br>';
-      output.innerHTML += hours + ' hours<br>';
-      output.innerHTML += minutes + ' minutes<br>';
-      output.innerHTML += seconds + ' seconds';
-    }
-    timer = setInterval(showRemaining, 1000);
-  }
+      .jumbotron {
+        -webkit-background-color: rgba(0,0,0,0.5) !important;
+        -moz-background-color: rgba(0,0,0,0.5) !important;
+        -o-background-color: rgba(0,0,0,0.5) !important;
+        background-color: rgba(0,0,0,0.5) !important;
+        padding: 15px;
+      }
+      .small {
+        font-variant: small-caps ;
+        font-size: 1.1em !important;
+      }
+      table {
+        -webkit-background-color: rgba(0,0,0,0.0) !important;
+        -moz-background-color: rgba(0,0,0,0.0) !important;
+        -o-background-color: rgba(0,0,0,0.0) !important;
+        background-color: rgba(0,0,0,0.0) !important;
+      }
+      .status {
+        font-size: 1.2em !important;
+      }
+    </style>
+  </head> 
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>We are coming!</h1>
+      </div>
 
-  CountDownTimer('10/14/2015 7:00 AM');
-  </script>
-</body>
+      <!-- ###################################################################### -->
+      <div class="row">
+      <!-- ################################################## -->
+
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="col-xs-4">
+                <h1>SFO</h1>
+                <p class="small">San Francisco, CA</p>
+              </div>
+              <div class="col-xs-4">
+                <h1><i class="fa fa-plane"></i></h1>
+              </div>
+              <div class="col-xs-4">
+                <h1>LAX</h1>
+                <p class="small">Los Angeles, CA</p>
+              </div>
+            </div>
+            <table class="table">
+              <tr>
+                <td>Airline:</td>
+                <td class="text-right">Virgin America</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td class="text-right">Wednesday 10/14</td>
+              </tr>
+              <tr>
+                <td>Flight:</td>
+                <td class="text-right">VX 922</td>
+              </tr>
+              <tr>
+                <td>Depart:</td>
+                <td class="text-right">07:00 AM</td>
+              </tr>
+              <tr>
+                <td>Arrive:</td>
+                <td class="text-right">08:20 AM</td>
+              </tr>
+            </table>
+            <hr />
+            <p id="SFO" class="status text-center"></p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="col-xs-4">
+                <h1>LAX</h1>
+                <p class="small">Los Angeles, CA</p>
+              </div>
+              <div class="col-xs-4">
+                <h1><i class="fa fa-plane"></i></h1>
+              </div>
+              <div class="col-xs-4">
+                <h1>DAL</h1>
+                <p class="small">Dallas, TX</p>
+              </div>
+            </div>
+            <table class="table">
+              <tr>
+                <td>Airline:</td>
+                <td class="text-right">Virgin America</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td class="text-right">Wednesday 10/14</td>
+              </tr>
+              <tr>
+                <td>Flight:</td>
+                <td class="text-right">VX 878</td>
+              </tr>
+              <tr>
+                <td>Depart:</td>
+                <td class="text-right">12:10 PM</td>
+              </tr>
+              <tr>
+                <td>Arrive:</td>
+                <td class="text-right">05:10 PM</td>
+              </tr>
+            </table>
+            <hr />
+            <p id="LAX" class="status text-center"></p>
+          </div>
+        </div>
+
+        <!-- ############################## -->
+
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="col-xs-4">
+                <h1>DFW</h1>
+                <p class="small">Dal. FT Worth, TX</p>
+              </div>
+              <div class="col-xs-4">
+                <h1><i class="fa fa-plane"></i></h1>
+              </div>
+              <div class="col-xs-4">
+                <h1>ATL</h1>
+                <p class="small">Atlanta, GA</p>
+              </div>
+            </div>
+            <table class="table">
+              <tr>
+                <td>Airline:</td>
+                <td class="text-right">Delta</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td class="text-right">Friday 10/16</td>
+              </tr>
+              <tr>
+                <td>Flight:</td>
+                <td class="text-right">DELTA 1890</td>
+              </tr>
+              <tr>
+                <td>Depart:</td>
+                <td class="text-right">05:45 AM</td>
+              </tr>
+              <tr>
+                <td>Arrive:</td>
+                <td class="text-right">08:52 AM</td>
+              </tr>
+            </table>
+            <hr />
+            <p id="DFW" class="status text-center"></p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="col-xs-4">
+                <h1>ATL</h1>
+                <p class="small">Atlanta, GA</p>
+              </div>
+              <div class="col-xs-4">
+                <h1><i class="fa fa-plane"></i></h1>
+              </div>
+              <div class="col-xs-4">
+                <h1>RSW</h1>
+                <p class="small">Fort Myers, FL</p>
+              </div>
+            </div>
+            <table class="table">
+              <tr>
+                <td>Airline:</td>
+                <td class="text-right">Delta</td>
+              </tr>
+              <tr>
+                <td>Date:</td>
+                <td class="text-right">Friday 10/16</td>
+              </tr>
+              <tr>
+                <td>Flight:</td>
+                <td class="text-right">DELTA 1068</td>
+              </tr>
+              <tr>
+                <td>Depart:</td>
+                <td class="text-right">09:46 AM</td>
+              </tr>
+              <tr>
+                <td>Arrive:</td>
+                <td class="text-right">11:26 AM</td>
+              </tr>
+            </table>
+            <hr />
+            <p id="ATL" class="status text-center"></p>
+          </div>
+        </div>
+
+      <!-- ################################################## -->
+      </div>
+      <!-- ###################################################################### -->
+
+      <div class="jumbotron">
+        <h1 class="text-center">RSW</h1>
+        <p class="small text-center">Fort Myers, FL</p>
+        <hr />
+        <h3>Can you pick us up in?:</h3>
+        <p class="text-center"><span id="RSW"></span></p>
+      </div>
+
+    </div>
+    <script>
+      CountDownTimer('10/14/2015 07:0 AM', 'SFO', 'Departing in: ');
+      CountDownTimer('10/14/2015 12:10 PM', 'LAX', 'Departing in: ');
+      CountDownTimer('10/16/2015 05:45 AM', 'DFW', 'Departing in: ');
+      CountDownTimer('10/16/2015 09:46 AM', 'ATL', 'Departing in: ');
+      CountDownTimer('10/16/2015 11:26 AM', 'RSW', ' ');
+      function CountDownTimer(dt, id, label) {
+        var output = document.getElementById(id);
+        var end = new Date(dt);
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+          var now = new Date();
+          var distance = end - now;
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+
+          if (distance < 0) {
+
+            clearInterval(timer);
+            output.innerHTML = 'Arrived!';
+            return;
+          }
+
+          output.innerHTML = label + days + ' days, ';
+          output.innerHTML += hours + ' hours, ';
+          output.innerHTML += minutes + ' minutes, ';
+          output.innerHTML += seconds + ' seconds';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+      }
+    </script>
+  </body>
 </html>
