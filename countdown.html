@@ -25,7 +25,7 @@
       }
       .small {
         font-variant: small-caps ;
-        font-size: 1.1em !important;
+        /*font-size: 1.1em !important;*/
       }
       table {
         -webkit-background-color: rgba(0,0,0,0.0) !important;
@@ -34,7 +34,7 @@
         background-color: rgba(0,0,0,0.0) !important;
       }
       .status {
-        font-size: 1.2em !important;
+        /*font-size: 1.2em !important;*/
       }
     </style>
   </head> 
@@ -53,14 +53,14 @@
             <div class="row text-center">
               <div class="col-xs-4">
                 <h1>SFO</h1>
-                <p class="small">San Francisco, CA</p>
+                <!-- <p class="small">San Francisco, CA</p> -->
               </div>
               <div class="col-xs-4">
                 <h1><i class="fa fa-plane"></i></h1>
               </div>
               <div class="col-xs-4">
                 <h1>LAX</h1>
-                <p class="small">Los Angeles, CA</p>
+                <!-- <p class="small">Los Angeles, CA</p> -->
               </div>
             </div>
             <table class="table">
@@ -95,14 +95,14 @@
             <div class="row text-center">
               <div class="col-xs-4">
                 <h1>LAX</h1>
-                <p class="small">Los Angeles, CA</p>
+                <!-- <p class="small">Los Angeles, CA</p> -->
               </div>
               <div class="col-xs-4">
                 <h1><i class="fa fa-plane"></i></h1>
               </div>
               <div class="col-xs-4">
                 <h1>DAL</h1>
-                <p class="small">Dallas, TX</p>
+                <!-- <p class="small">Dallas, TX</p> -->
               </div>
             </div>
             <table class="table">
@@ -139,14 +139,14 @@
             <div class="row text-center">
               <div class="col-xs-4">
                 <h1>DFW</h1>
-                <p class="small">Dal. FT Worth, TX</p>
+                <!-- <p class="small">Dal. FT Worth, TX</p> -->
               </div>
               <div class="col-xs-4">
                 <h1><i class="fa fa-plane"></i></h1>
               </div>
               <div class="col-xs-4">
                 <h1>ATL</h1>
-                <p class="small">Atlanta, GA</p>
+                <!-- <p class="small">Atlanta, GA</p> -->
               </div>
             </div>
             <table class="table">
@@ -181,14 +181,14 @@
             <div class="row text-center">
               <div class="col-xs-4">
                 <h1>ATL</h1>
-                <p class="small">Atlanta, GA</p>
+                <!-- <p class="small">Atlanta, GA</p> -->
               </div>
               <div class="col-xs-4">
                 <h1><i class="fa fa-plane"></i></h1>
               </div>
               <div class="col-xs-4">
                 <h1>RSW</h1>
-                <p class="small">Fort Myers, FL</p>
+                <!-- <p class="small">Fort Myers, FL</p> -->
               </div>
             </div>
             <table class="table">
@@ -223,8 +223,8 @@
       <!-- ###################################################################### -->
 
       <div class="jumbotron text-center">
-        <h1RSW</h1>
-        <p class="small">Fort Myers, FL</p>
+        <h1>RSW</h1>
+        <!-- <p class="small">Fort Myers, FL</p> -->
         <hr />
         <h3>Can you pick us up in?:</h3>
         <p><span id="RSW"></span></p>
@@ -232,10 +232,10 @@
 
     </div>
     <script>
-      CountDownTimer('10/14/2015 07:0 AM', 'SFO', 'Departing in: ');
-      CountDownTimer('10/14/2015 12:10 PM', 'LAX', 'Departing in: ');
-      CountDownTimer('10/16/2015 05:45 AM', 'DFW', 'Departing in: ');
-      CountDownTimer('10/16/2015 09:46 AM', 'ATL', 'Departing in: ');
+      CountDownTimer('10/14/2015 07:0 AM', 'SFO', 'Departing in:<br>');
+      CountDownTimer('10/14/2015 12:10 PM', 'LAX', 'Departing in:<br>');
+      CountDownTimer('10/16/2015 05:45 AM', 'DFW', 'Departing in:<br>');
+      CountDownTimer('10/16/2015 09:46 AM', 'ATL', 'Departing in:<br>');
       CountDownTimer('10/16/2015 11:26 AM', 'RSW', ' ');
       function CountDownTimer(dt, id, label) {
         var output = document.getElementById(id);
