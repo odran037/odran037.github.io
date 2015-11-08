@@ -105,11 +105,11 @@
      .service('service', service)
      .factory('factory', factory)
     return
-    
+
            </pre>
           </div>
           <div class="col-md-6 text-center">
-            <p class="ct">{{ctrl.test1}}</p>
+            <p class="ct" ng-bind="ctrl.test1"></p>
             <pre class="text-left">
     controller = (service, factory) ->
       vm = this
@@ -123,7 +123,7 @@
         <hr/>
         <div class="row">
           <div class="col-md-6 text-center">
-            <p class="ct">{{ctrl.test2}}</p>
+            <p class="ct" ng-bind="ctrl.test2"></p>
             <pre class="text-left">
     service = ->
       @str = 'Service check'
@@ -133,7 +133,7 @@
      </pre>
           </div>
           <div class="col-md-6 text-center">
-            <p class="ct">{{ctrl.test3}}</p>
+            <p class="ct" ng-bind="ctrl.test3"></p>
             <pre class="text-left">
     factory = ->
       { str : 'Factory check' }
