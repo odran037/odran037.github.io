@@ -55,7 +55,7 @@
                   | return
                   |
               .col-md-6.text-center
-                p.ct {{ctrl.test1}}
+                p.ct(ng-bind="ctrl.test1")
                 pre.text-left
                   | controller = (service, factory) ->
                   |   vm = this
@@ -66,7 +66,7 @@
             hr
             .row
               .col-md-6.text-center
-                p.ct {{ctrl.test2}}
+                p.ct(ng-bind="ctrl.test2")
                 pre.text-left
                   | service = ->
                   |   @str = 'Service check'
@@ -75,7 +75,7 @@
                   |
                   |
               .col-md-6.text-center
-                p.ct {{ctrl.test3}}
+                p.ct(ng-bind="ctrl.test3")
                 pre.text-left
                   | factory = ->
                   |   { str : 'Factory check' }
