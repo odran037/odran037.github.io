@@ -1,8 +1,10 @@
+/*    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.ttf') format('truetype');*/
 @font-face {
   font-family: 'Hands';
   src:
-    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.woff') format('woff'),
-    url('https://dl.dropboxusercontent.com/u/2531374/webfont/GALLAUDET.ttf') format('truetype');
+    url('/Users/odran037/Dropbox/Public/webfont/GALLAUDET.woff') format('woff'),
+    url('/Users/odran037/Dropbox/Public/webfont/GALLAUDET.ttf') format('truetype');
 }
 
 
