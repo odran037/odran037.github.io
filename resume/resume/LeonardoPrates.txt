@@ -1,0 +1,64 @@
+Leonardo Prates
+
+Hayward CA 94544
+(702) 498 - 0327
+hello@odran037.io
+http://odran037.io
+
+View my portfolio at http://odran037.io
+
+About
+Highly motivated and hardworking individual with an insatiable appetite for learning. Passionate about programming and solving problems. Loves working in a team and able to stay positive and solve problems using expertise and research.
+
+Skills
+HTML5, CSS3, JavaScript, Jade, Stylus, CoffeeScript, jQuery, AngularJS, Node.js, MongoDB, Express, Ajax, JSON, REST, Git, GitHub, Heroku, DNS, FTP, Linux, OS X, Windows
+Basic: Python, Ruby, PHP, MySQL, Apache, React, Backbone.js, Underscore
+
+Experience
+Developer Mentor – DevMountain - TX 2015 – Current
+Responsible mentoring students and ensuring their success in learning full stack web development.
+
+Senior Remote Support – Weebly - FL 2013 – Current
+Responsible for providing chat and email-based support to customers relating to website design, ecommerce, email and domain DNS setup. Resolve billing issues and assist customers purchasing different products and solutions to suit their needs. Also responsible for assisting other support agents with issues and questions that require advanced support.
+
+IT Specialist - Freelance - Orange City, FL 2006 – 2013
+Notebook and desktop repair, Home network installation and security implementation. Printer, copier and fax installation and repair.
+
+IT Specialist - CompTech Care - Fort Myers, FL 2007
+Provided notebook and desktop repair, network management services, implemented off-site data backup, remote assistance, designed diagrams of small and medium business networks. Set up servers, routers, switches, hubs and VPNs.
+
+Customer Service Engineer - Sal Serv., Xerox - Naples, FL 2001 – 2002
+Performed full range of maintenance, technical diagnostics, software loads, installation, removal, retrofit of Xerox products and customer call assistance, provided customer training on assigned products in accordance with current field procedures and responsible for assigned company assets (i.e. parts, tools, communication and computing devices, vehicles).
+
+Odd jobs
+I've travelled around the country for a few years and during that time I did freelance IT work, website maintenance, construction masonry and carpentry, worked at a retail store, at a hotel spa and fitness center, owned and operated my own retail business.
+
+Education
+DevMountain, Provo, UT – 2015
+Fullstack web development - MEAN Stack
+
+FreeCodeCamp, Online - 2015
+Fullstack web development - MEAN Stack
+
+CodeSchool, Online - 2014 - 2015
+JavaScript Best Practices
+JavaScript Road Trip 1, 2 and 3
+Front End Foundations
+Front End Formations
+Shaping Up With Angular JS
+Real Time Web With Node JS
+
+University of Central Florida - 2013
+Certified fiber Optics Specialist in Outside Plant Cabling (CFOS/O)
+Certified fiber Optics Specialist/Testing & Maintenance (CFOS/T)
+Certified fiber Optics Splicing Specialist Course (CFOS/S)
+Certified fiber Optics Technician Course (CFOT)
+
+Southwest Florida College - 2007
+Network and System Administration/Administrator
+Microsoft Network Engineering Studies
+
+Languages
+English, Portuguese Native
+Spanish Conversational
+Arabic Basic

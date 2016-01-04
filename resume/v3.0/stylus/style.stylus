@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, p, .label, .title
+  font-family 'Source Code Pro'
+
+body
+  margin-top 50px
+  background #000
+  color #fff
+
+.header, .box
+  padding-top 15px
+  background #333
+  text-align center
+  
+.header
+  h1
+    font-size 2.3em
+    font-variant small-caps
+    letter-spacing 15px
+    margin-left 15px
+
+p
+  padding-bottom 15px
+
+.col-md-12, .col-md-6
+  background #333
+  border 5px #000 solid
+
+.content-box
+  max-width 720px
+  margin 0 auto
+  img
+    width 720px
+    margin 0 auto
+
+.jumbotron
+  background #000
+
+a:link, a:visited
+  text-decoration none
+  color #fff
+
+a:hover, a:active
+  text-decoration none
+  color #aaa
