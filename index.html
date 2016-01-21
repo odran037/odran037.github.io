@@ -267,6 +267,29 @@
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
       <script src="https://assets.codepen.io/assets/embed/ei.js"></script>
+      <script>
+      function isItMoreThanfifty(args) {
+        return args * 10 < 50 ? 'No, its less than' : 'Yes, its more than';
+      }
 
+      function checkNumbersArray(arr) {
+        return arr.map(function(num) {
+          return isItMoreThanfifty(num);
+        });
+      }
+
+      function builtArray(begin, end) {
+        var nums = [];
+        for(var i = begin; i <= end; i++) {
+          nums.push(i);
+        }
+        return nums;
+      }
+
+      var test = checkNumbersArray(builtArray(1, 10));
+
+      console.log(test);
+
+      </script>
   </body>
 </html>
