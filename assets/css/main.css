@@ -3127,3 +3127,11 @@
 			}
 
 	}
+
+/*.sub-links {
+	font-size: 0.9em;
+}*/
+
+li.sub-links > a {
+	font-size: 0.7em !important;
+}

@@ -4,43 +4,61 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Site Ideas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <style>
+    .bg-c {
+       margin-top: 15px;
+       background: #333;
+    }
+    .c-bg-lc {
+      background: #555;
+      border-color: #333;
+    }
+    .c-bg-lc > a:link, a:visited {
+      color: #ddd;
+    }
+    .c-bg-lc > a:hover, a:active {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .activated {
+      background: #777;
+    }
     iframe {
       margin-top: 1px;
       border: 1px solid rgba(0,0,0,0.6);
     }
     </style>
   </head>
-  <body>
+  <body class="bg-c">
     <div class="container-fluid">
-      <div class="jumbotron">
+      <div class="jumbotron" style="background:#555;color:#fff;border-color:#777">
         <h1>Jumbotron</h1>
       </div>
       <div class="row">
         <div class="col-lg-2">
           <ul class="list-group">
-            <li class="list-group-item"><a class="text-success" target="display" href="adoptly/index.html">Adoptly</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="armando/index.html">Armando</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="bass/index.html">Bass</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="best-bite/index.html">Best Bite</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="bolt-network/index.html">Bolt Network</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="broadway/index.html">Broadway</a></li>
-            <li class="list-group-item active"><a class="text-success" target="display" href="excursion/index.html">Excursion</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="headlines/index.html">Headlines</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="innovation-cloud/index.html">Innovation Cloud</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="junction/index.html">Junction</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="move/index.html">Move</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="newsroom/index.html">Newsroom</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="pocket-book/index.html">Pocket Book</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="red-eye/index.html">Red Eye</a></li>
-            <li class="list-group-item"><a class="text-success" target="display" href="shutterbug/index.html">Shutterbug</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="adoptly/index.html">Adoptly</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="armando/index.html">Armando</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="bass/index.html">Bass</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="best-bite/index.html">Best Bite</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="bolt-network/index.html">Bolt Network</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="broadway/index.html">Broadway</a></li>
+            <li class="list-group-item c-bg-lc activated"><a target="display" href="excursion/index.html">Excursion</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="headlines/index.html">Headlines</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="innovation-cloud/index.html">Innovation Cloud</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="junction/index.html">Junction</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="move/index.html">Move</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="newsroom/index.html">Newsroom</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="pocket-book/index.html">Pocket Book</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="red-eye/index.html">Red Eye</a></li>
+            <li class="list-group-item c-bg-lc"><a target="display" href="shutterbug/index.html">Shutterbug</a></li>
           </ul>
         </div>
         <div class="col-lg-10">
           <iframe src="excursion/index.html" width="100%" height="612" name="display" frameborder="0"></iframe>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="color:#ddd">
           <hr />
           <p class="text-center">CodeCademy HTML/CSS Projects</p>
         </div>
