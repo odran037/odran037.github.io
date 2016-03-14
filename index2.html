@@ -31,9 +31,9 @@
         Resume          http://leonardoprates.com
       ======================================================
   -->
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Leo</title>
     <link rel="apple-touch-icon" sizes="57x57" href="http://dummyimage.com/57x57/000/fff.png&text=LP">
     <link rel="apple-touch-icon" sizes="60x60" href="http://dummyimage.com/60x60/000/fff.png&text=LP">
@@ -48,10 +48,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="http://dummyimage.com/32x32/000/fff.png&text=LP">
     <link rel="icon" type="image/png" sizes="96x96" href="http://dummyimage.com/96x96/000/fff.png&text=LP">
     <link rel="icon" type="image/png" sizes="192x192" href="http://dummyimage.com/192x192/000/fff.png&text=LP">
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    .hide { display: none; }
+    /*.expand { display: block !important; }*/
+    </style>
     <script>
         console.log(
                     "          ##################################          "
@@ -107,152 +111,185 @@
                     "======================================================"
         );
     </script>
-	</head>
-	<body>
+  </head>
+  <body>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
-				<h1>Hello, my name is <strong>leo</strong></h1>
-				<p>
-					<a href="#one">About</a>
-          <br />
-					<a href="#two">Portfolio</a>
-          <br />
-					<a href="#three">Skills</a>
-          <br />
-					<a href="#four">Interests</a>
-          <br />
-					<a href="#five">Contact</a>
-				</p>
-			</header>
+    <!-- Header -->
+      <header id="header">
+        <a href="#" class="image avatar"><img src="images/elemLP.png" alt="" /></a>
+        <h1>Hello, my name is <strong>leo</strong></h1>
+        <ul class="actions">
+          <li><a href="#main">About</a></li>
+          <li><a href="#two">Portfolio</a></li>
+          <li><a href="#three">Skills</a></li>
+          <li><a href="#four">Interests</a></li>
+          <li><a href="#five">Contact</a></li>
+        </ul>
+      </header>
 
-		<!-- Main -->
-			<div id="main">
+    <!-- Main -->
+      <div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
+        <!-- One -->
+          <section id="one">
+            <header class="major">
               <h2>I <i class="fa fa-heart"></i> code.</h2>
-						</header>
-						<p>I'm passionate about building beautiful, yet functional projects. Looking for a great opportunity to put my skills to good use and to satisfy my insatiable appetite for learning.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/odran037" target="_blank" class="button icon fa-github">GitHub</a></li>
-							<li><a href="http://codepen.io/odran037" target="_blank" class="button icon fa-codepen">CodePen</a></li>
-							<li><a href="https://www.linkedin.com/in/odran037" class="button icon fa-code">Portfolio</a></li>
-						</ul>
-					</section>
+            </header>
+            <p>I'm passionate about building beautiful, yet functional projects. Looking for a great opportunity to put my skills to good use and to satisfy my insatiable appetite for learning.</p>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Portfolio</h2>
-						<div class="row">
-							<article class="6u 12u$(xsmall)">
-								<a href="http://codepen.io/odran037/full/jPXJjp" target="_blank" class="image fit thumb"><img src="images/nf.png" alt="" /></a>
-								<h3><a href="http://codepen.io/odran037/full/jPXJjp" target="_blank">Number Facts</a></h3>
-								<p>Learn facts about numbers. Math, trivia and year.</p>
-								<p>Built using AngularJS to consume API form numbersapi.com and ng-route for a single page application.</p>
-								<p>Bootstrap for styling, Jade and Stylus for HTML and CSS.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall)">
-								<a href="http://codepen.io/odran037/full/zGLKKR" target="_blank" class="image fit thumb"><img src="images/rfm.png" alt="" /></a>
-								<h3><a href="http://codepen.io/odran037/full/zGLKKR" target="_blank">Random Fact Machine</a></h3>
-								<p>Learn random number facts and share on Twitter.</p>
-								<p>Another numbersapi.com project using jQuery to consume the API.</p>
-								<p>Built using Jade, Stylus and CoffeeScript for preprocessors and Bootstrap for styling</p>
-							</article>
-              <article class="6u 12u$(xsmall)">
-                <a href="http://odran037.io/projects/yakkityhands/" target="_blank" class="image fit thumb"><img src="images/yh.png" alt="" /></a>
-                <h3><a href="http://odran037.io/projects/yakkityhands/" target="_blank">Yakkity Hands</a></h3>
-                <p>A sign language learning site built for my wife to teach our baby daughter sign language.</p>
-                <p>Project built using AngularJS and NodeJS to scrape data and build a JSON dictionary.</p>
-                <p>* This project is not yet complete.</p>
+            <p>On my "free" time, I like to create simple sites that interest me and GUIs for various coding challenges. See my <a href="#two">portfolio</a> for some examples, my <a href="http://codepen.io/odran037">CodePen</a> profile for the others and <a href="https://github.com/odran037">GitHub</a> for the rest of the code I'm working on.</p>
+            <ul class="actions">
+              <!-- <li><a href="#two" class="button icon fa-code">Portfolio</a></li> -->
+            </ul>
+          </section>
+
+        <!-- Two -->
+          <section id="two">
+            <h2>Portfolio</h2>
+            <ul id="portfolio" class="actions">
+              <li><a href="#" class="button icon fa-code">JavaScript</a></li>
+              <li><a href="#" class="button icon fa-code">jQuery</a></li>
+              <li><a href="#" class="button icon fa-code">Angular</a></li>
+              <li><a href="#" class="button icon fa-code">React</a></li>
+              <br /><br /><br/ >
+              <li><a href="#" class="button icon fa-code">Fullstack</a></li>
+            </ul>
+            <div class="row">
+              <article id="javascript" class="12u$ 12u$(xlarge) hide">
+                <h3>JavaScript</h3>
+                <h4><a href="http://codepen.io/odran037/full/rxxgRd" target="_blank">Don't Play The Lotto</a></h4>
+                <p>An informational page explaining the odds of playing the lotto and how to calculate them.<br />Built with Jade, Stylus and CoffeeScript.</p>
+                <h4><a href="http://codepen.io/odran037/full/wMzbaj" target="_blank">CheckerBoard</a></h4>
+                <p>Dynamic element creation. Built using HTML, CSS and JavaScript.</p>
+                <h4><a href="http://codepen.io/odran037/full/MKaMbP" target="_blank">Friendly Notes</a></h4>
+                <p>Simple and friendly encryption. Coding challenge with three different phases of simple encryption.<br />Built with Jade, Bootstrap and JavaScript.</p>
               </article>
-							<article class="6u$ 12u$(xsmall)">
-								<a href="http://odran037.io/projects/SpaceVR-projects/email/index.html" target="_blank" class="image fit thumb"><img src="images/svr.png" alt="" /></a>
-								<h3><a href="http://odran037.io/projects/SpaceVR-projects/email/index.html" target="_blank">SpaceVR Kickstarter Email</a></h3>
-								<p>Email template built with HTML and CSS from the <a href="https://raw.githubusercontent.com/odran037/SpaceVR-projects/master/assets/SpaceVR%20Email%20Template%20Mock.png">mock up</a> for <a href="http://spacevr.co" target="_blank">SpaceVR.co</a> Kickstarter campaign launch.</p>
-								<p>Support <a href="https://www.kickstarter.com/projects/1035872323/spacevr-step-into-space?ref=users" target="_blank">SpaceVR.co on Kickstarter</a>.</p>
-							</article>
-<!--               <article class="6u 12u$(xsmall)">
-                <a href="http://codepen.io/odran037/full/QbZNpg" target="_blank" class="image fit thumb"><img src="images/naa.png" alt="" /></a>
-                <h3><a href="http://codepen.io/odran037/full/QbZNpg" target="_blank">NASA APOD</a></h3>
-                <p>An app consuming NASA's "Astronomy Picture of the Day" API.</p>
-                <p>My first project using preprocessors: Jade, Stylus, CoffeeScript.</p>
+              <article id="jquery" class="12u$ 12u$(xlarge) hide">
+                <h3>jQuery</h3>
+                <h4><a href="http://codepen.io/odran037/full/RrjjOr" target="_blank">Simple Calendar</a></h4>
+                <p>A month to month calendar generated by JavaScript for each month. Logic correctly places the days in its corresponding days of the week rows and columns.<br />Built with jQuery.</p>
+                <h4></h4>
+                <h4><a href="http://codepen.io/odran037/full/mVBYXv" target="_blank">Wikipedia Viewer</a></h4>
+                <p>Takes an input from the user and displays Wikipedia results based on that input. Random button uses Wikipedia random URL feature and sends user to that page.<br>Built with Jade, SCSS, jQuery and Wikipedia API.</p>
+                <h4><a href="http://codepen.io/odran037/full/XXeRKM" target="_blank">Wikipedia Facts of the Day</a></h4>
+                <p>Displays facts of the current day in many other years in history.<br>Built using Jade, SCSS, jQuery, CoffeeScript, Wikipedia API.</p>
+                <h4><a href="http://codepen.io/odran037/full/LGzwXW" target="_blank">Periodic Table of the Elements</a></h4>
+                <p>This was built based on this <a href="https://starstruckworld.files.wordpress.com/2013/05/periodictablewallpaper.png" target="_blank">image</a>. This project highlights the elements as you hover and on click, highlights all elements of the same type.<br>Built using Jade, SCSS and jQuery</p>
+                <h4><a href="http://codepen.io/odran037/full/zGLKKR" target="_blank">Random Fact Machine</a></h4>
+                <p>Uses <a href="http://numbersapi.com/" target="_blank">NumbersAPI</a> to generate a random numerical fact with options of Math, Date, Year and Trivia. Tweet button tweets fact after it is cropped to fit in Twitters character limits.<br>Built using Jade, Stylus, jQuery, CoffeeScript.</p>
+                <h4><a href="http://codepen.io/odran037/full/QbZNpg" target="_blank">NASA APOD</a></h4>
+                <p>Rebuild of NASA Astronomy Picture of the Day sample site. <br>Built with Jade, Stylus, jQuery, CoffeeScript.</p>
+                <h4><a href="http://codepen.io/odran037/full/dowNwM" target="_blank">Local Weather</a></h4>
+                <p>A local weather site that uses geolocation function to prompt user to share their location. Location coordinates are used to make an API call to <a href="http://forecast.io" target="_blank">Forecast.io</a>. A different image is displayed to correspond to the temperature.<br>Built with Jade, Stylus, jQuery and Skycons library.</p>
               </article>
-              <article class="6u 12u$(xsmall)">
-                <a href="http://codepen.io/odran037/full/dowNwM" target="_blank" class="image fit thumb"><img src="images/slw.png" alt="" /></a>
-                <h3><a href="http://codepen.io/odran037/full/dowNwM" target="_blank">Local Weather</a></h3>
-                <p>A simple local weather app. Built with Jade, Stylus, jQuery and Skycons.</p>
-                <p>App asks for user to share their location which then uses that data to make an API call to the weather service. Icon and image change according to weather conditions and temperature.</p>
-              </article> -->
-						</div>
-					</section>
+              <article id="angular" class="12u$ 12u$(xlarge) hide">
+                <h3>Angular</h3>
+                <h4><a href="http://codepen.io/odran037/full/bENqRV" target="_blank">Angulator</a></h4>
+                <p>A simple calculator built with Angular. Design is inspired by Xbox UI.<br>Built using Jade, Stylus, Angular and CoffeeScript.</p>
+                <h4><a href="http://codepen.io/odran037/full/pjQJBX">NPM Definitions</a></h4>
+                <p>Having some fun with <a href="https://www.npmjs.com/" target="_blank">NPM's</a> website silly definitions.<br>Built using Jade, SCSS, Angular and large array from npm.</p>
+                <h4><a href="http://codepen.io/odran037/full/LGxZVj" target="_blank">Caesar's Cypher | ROT 13</a></h4>
+                <p>Inspired by <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Caesar Cypher</a>, I built this "live" encrypt-as-you-type program that automatically rotates the text 13 places.<br>Build using Jade, Stylus, Angular and CoffeeScript.</p>
+                <h4><a href="http://odran037.io/numberFacts" target="_blank">Number Facts</a></h4>
+                <p>Takes an input form the user and returns a fact based on that number. Using <a href="http://numbersapi.com/" target="_blank">NumbersAPI</a> to provide facts on Math, Date, and Trivia.<br>Built with Bootstrap, AngularJS and Angular ng-route for single page application functionality.</p>
+                <h4><a href="http://odran037.io/projects/angular-itunes/" target="_blank">Angular iTunes</a></h4>
+                <p>A clone of iTunes built in Angular. Allows you to search for media and click to play the media.<br>Built using Angular and Angular ng-grid.</p>
+              </article>
+              <article id="react" class="12u$ 12u$(xlarge) hide">
+                <h3>React</h3>
+                <h4><a href="https://github.com/odran037/React-chatroom/tree/master" target="_blank">React Chatroom</a></h4>
+                <p>Public chatroom built with React and using the Parse service.<br><a href="https://github.com/odran037/React-chatroom/tree/es2015" target="_blank"> Also built with ES6(ES2015)</a></p>
+                <h4><a href="http://odran037.io/React-todo-collection/index.html" target="_blank">React TODO Collection</a></h4>
+                <p>Todo Collection: Allows user to create different todo lists and add tasks to each individually.<br>Built with React and Bootstrap.</p>
+                <h4><a href="http://odran037.io/React-todo-list/public/index.html" target='_blank'>React MINI TODO List</a></h4>
+                <p>Mini Todo List: A simple todo list. Allows user to input tasks.<br>Built with React and Bootstrap.</p>
+              </article>
+              <article id="fullstack" class="12u$ 12u$(xlarge) hide">
+                <h3>Fullstack Microservices</h3>
+                <h4><a href="https://microservices.herokuapp.com" target="_blank">Microservices</a></h4>
+                <p>A collection of microservices. Built with Node, Express, jQuery, Bootstrap or Bootswatch.</p>
+                <h4><a href="https://microservices.herokuapp.com/md5/" target="_blank">MD5 Hash Generator</a></h4>
+                <p>Services takes a string input and makes a post request to the server which returns the MD5 hash of that string.<br /><a href="https://github.com/odran037/MD5-Hash-Generator">View Repo</a></p>
+                <h4><a href="https://microservices.herokuapp.com/rhp/" target="_blank">Request header parser microservice</a></h4>
+                <p>Service makes a GET request to the server. Server makes an API request to a service and returns the IP address of the user in addition, gets the language and useragent from request headers. Then displays all three on the DOM.<br /><a href="https://github.com/odran037/request-header-parser-microservice">View Repo</a></p>
+                <h4><a href="https://microservices.herokuapp.com/unt/" target="_blank">Unix & natural timestamp</a></h4>
+                <p>Service takes a date input in either natural or unix formats and returns both natural and unix formats converted.<br /><a href="https://github.com/odran037/timestamp-microservice">View Repo</a></p>
+              </article>
+            </div>
+          </section>
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Skills</h2>
-						<section>
-							<h4>Current</h4>
-							<p>
-								HTML &middot; Jade &middot; CSS &middot; Stylus &middot; JavaScript &middot; CoffeeScript &middot; Bootstrap &middot;jQuery &middot; Angular &middot; Node &middot; Express &middot; Mongo &middot; Firebase &middot; Git &middot; GitHub &middot; Heroku
-							</p>
-						</section>
-						<section>
-							<h4>Learning</h4>
-							<p>I'm constantly learning and working on getting better at what I already know. Currently I'm working on familiarizing myself with:<br />
-							React &middot; BackBone &middot; Underscore &middot; Meteor</p>
-						</section>
-					</section>
 
-				<!-- Four -->
-					<section id="four">
-						<h2>Interests</h2>
-						<p>Hardware and Internet Of Things, electric motors and unusual modes of transportation.</p>
-						<p>When I exit the matrix, I enjoy spending time outdoors, hiking, riding a bicycle, camping, traveling and wood working.</p>
-					</section>
+        <!-- Three -->
+          <section id="three">
+            <h2>Skills</h2>
+            <section>
+              <h4>Current</h4>
+              <p>These are the technologies I'm using on a fairly regular basis and are the ones I feel proficient and confident with, while keeping in mind </p>
+              <p>HTML &middot; Jade &middot; CSS &middot; Stylus &middot; JavaScript &middot; CoffeeScript &middot; Bootstrap &middot;jQuery &middot; Angular &middot; Node &middot; Express &middot; Mongo &middot; Firebase &middot; Git &middot; GitHub &middot; Heroku</p>
+            </section>
+            <section>
+              <h4>Working on</h4>
+              <p>I'm constantly learning and working on getting better at what I already know. Currently I'm working on familiarizing myself better with:</p>
+              React &middot; Mongo &middot; Firebase</p>
+              <p>I also have basic experience with PHP, Python and Ruby.</p>
+            </section>
+          </section>
 
-				<!-- Five -->
-					<section id="five">
-						<h2>Get In Touch</h2>
-						<ul class="actions">
-							<li><a href="https://github.com/odran037" class="button icon fa-github">GitHub</a></li>
-							<li><a href="https://codepen.io/odran037" class="button icon fa-codepen">CodePen</a></li>
-							<li><a href="https://twitter.com/odran037" class="button icon fa-twitter">Twitter</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/odran037" class="button icon fa-linkedin">LinkedIn</a></li>
-							<li><a href="mailto:hello@odran037.io" class="button icon fa-envelope-o">Email</a></li>
-							<li><a href="http://leonardoprates.com" class="button icon fa-file-text-o">Resume</a></li>
-						</ul>
-					</section>
+        <!-- Four -->
+          <section id="four">
+            <h2>Interests</h2>
+            <p>Hardware and Internet Of Things, electric motors and unusual modes of transportation.</p>
+            <p>When I exit the matrix, I enjoy spending time outdoors, hiking, riding/building/fixing bicycles, camping, traveling and wood working.</p>
+          </section>
 
-			</div>
+        <!-- Five -->
+          <section id="five">
+            <h2>Get In Touch</h2>
+            <ul class="actions">
+              <li><a href="https://github.com/odran037" class="button icon fa-github">GitHub</a></li>
+              <li><a href="https://codepen.io/odran037" class="button icon fa-codepen">CodePen</a></li>
+              <li><a href="https://twitter.com/odran037" class="button icon fa-twitter">Twitter</a></li>
+            </ul>
+            <ul class="actions">
+              <li><a href="https://www.linkedin.com/in/odran037" class="button icon fa-linkedin">LinkedIn</a></li>
+              <li><a href="mailto:hello@odran037.io" class="button icon fa-envelope-o">Email</a></li>
+              <li><a href="http://leonardoprates.com" class="button icon fa-file-text-o">Resume</a></li>
+            </ul>
+          </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/odran037" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://codepen.io/odran037" class="icon fa-codepen"><span class="label">CodePen</span></a></li>
-					<li><a href="https://www.linkedin.com/in/odran037" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://twitter.com/odran037" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="mailto:hello@odran037.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					<li><a href="http://leonardoprates.com" class="icon fa-file-text-o"><span class="label">Resume</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li><a href="http://darajatan.tumblr.com"><i class="fa fa-bicycle"></i></a></li>
-					<li>Leonardo</li>
-					<li>Bay Area, CA <span class="icon fa-plane"></span> Dallas, TX</li>
-				</ul>
-			</footer>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+    <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://github.com/odran037" class="icon fa-github"><span class="label">Github</span></a></li>
+          <li><a href="https://codepen.io/odran037" class="icon fa-codepen"><span class="label">CodePen</span></a></li>
+          <li><a href="https://www.linkedin.com/in/odran037" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://twitter.com/odran037" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="mailto:hello@odran037.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+          <li><a href="http://leonardoprates.com/resume/Leonardo-Prates.txt" class="icon fa-file-text-o"><span class="label">Resume</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li><a href="http://leonardoprates.com">Leonardo</a></li>
+          <li>Dallas, TX</li>
+          <li>2016</li>
+        </ul>
+      </footer>
 
-	</body>
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+      <script src="https://assets.codepen.io/assets/embed/ei.js"></script>
+      <script>
+      $('#portfolio').find('a[href="#"]').on('click', function (e) {
+        e.preventDefault();
+        var selectDiv = '#' + $(this).context.innerHTML.toLowerCase();
+        $(selectDiv).toggleClass('hide').siblings().addClass('hide');
+      });
+      </script>
+  </body>
 </html>
