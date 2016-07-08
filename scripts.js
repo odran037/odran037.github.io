@@ -31,21 +31,36 @@
         case '#home':
           $('#about').hide(function() {
             $('#portfolio').hide(function() {
-              $('#home').fadeIn(500);
+              $('#connect').hide(function() {
+                $('#home').fadeIn(500);
+              });
             });
           });
           break;
         case '#about':
           $('#home').hide(function() {
             $('#portfolio').hide(function() {
-              $('#about').fadeIn(500);
+              $('#connect').hide(function() {
+                $('#about').fadeIn(500);
+              });
             });
           });
           break;
-        case '#portfolio':
+          case '#portfolio':
+            $('#home').hide(function() {
+              $('#about').hide(function() {
+                $('#connect').hide(function() {
+                  $('#portfolio').fadeIn(500);
+                });
+              });
+            });
+            break;
+        case '#connect':
           $('#home').hide(function() {
             $('#about').hide(function() {
-              $('#portfolio').fadeIn(500);
+              $('#portfolio').hide(function() {
+                $('#connect').fadeIn(500);
+              });
             });
           });
           break;
@@ -53,6 +68,7 @@
           $('#home').fadeIn(500);
           $('#about').fadeOut();
           $('#portfolio').fadeOut();
+          $('#connect').fadeOut();
       }
     })
 

@@ -9,7 +9,7 @@ body {
   font-size: 15pt;
   color: #ffffff;
 }
-.container, #home, #about, #portfolio {
+.container, #home, #about, #portfolio, #connect {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,8 +19,9 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#home, #about, #portfolio {
+#home, #about, #portfolio, #connect {
   width: 100%;
+  border: 1px solid #fff;
 }
 
 .nav-custom {
@@ -52,6 +53,6 @@ a:hover, a:active {
   position: relative;
 }
 
-body, #about, #portfolio {
+body, #about, #portfolio, #connect {
   display: none;
 }
