@@ -95,30 +95,27 @@ Contact: <a href="http://goo.gl/forms/O0ufSOna9C2WmDfH3" target="_blank">http://
 </pre>
       </div>
     </div>
-    <!-- <footer>
-      <h3>
-        <a href="http://leonardoprates.com">
-          <span class="glyphicon glyphicon-flash"></span>
-        </a>
-      </h3>
-    </footer> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
-    $('#myonoffswitch').on('click', function() {
-      if (!$(this).prop('checked')) {
-        $('body').addClass('body-dark');
-        $('pre').addClass('pre-dark');
-        $('a').addClass('text-success');
-      } else {
-        $('body').removeClass('body-dark');
-        $('pre').removeClass('pre-dark');
-        $('a').removeClass('text-success');
-      }
-    });
-    $('#banner').on('click', function() {
-      // window.location.href = 'http://leonardoprates.com';
-      window.open('http://leonardoprates.com','_blank');
-    });
+    (function() {
+      $(document).ready(function() {
+        $('#myonoffswitch').on('click', function() {
+          if (!$(this).prop('checked')) {
+            $('body').addClass('body-dark');
+            $('pre').addClass('pre-dark');
+            $('a').addClass('text-success');
+          } else {
+            $('body').removeClass('body-dark');
+            $('pre').removeClass('pre-dark');
+            $('a').removeClass('text-success');
+          }
+        });
+        $('#banner').on('click', function() {
+          window.open('http://leonardoprates.com','_blank');
+        });
+      });
+      console.log(["         ##################################          ",               "          #                                #          ",               "          # 037                         5  #          ",               "          #                             4  #          ",               "          #     ###                     2  #          ",               "          #     ###                     5  #          ",               "          #     ###                     4  #          ",               "          #     ###       ###########   3  #          ",               "          #     ###       ###       ##     #          ",               "          #     ###       ###       ##     #          ",               "          #     #####################      #          ",               "          #               ###              #          ",               "          #               ###              #          ",               "          #               ###              #          ",               "          #                                #          ",               "          #        53662736-772837         #          ",               "          #                                #          ",               "          ##################################          ",               "======================================================",               "  GitHub          https://github.com/odran037         ",               " CodePen          http://codepen.io/odran037          ",               "LinkedIn          https://www.linkedin.com/in/odran037",               "======================================================"].join('\n'));
+    }).call(this);
     </script>
   </body>
 </html>
