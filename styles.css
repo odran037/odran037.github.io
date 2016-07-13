@@ -98,10 +98,6 @@
   margin-bottom: 5%;
 }
 
-.col-sm-12 > pre {
-  white-space: nowrap;
-}
-
 .col-sm-10 > pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
