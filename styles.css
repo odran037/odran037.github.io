@@ -97,6 +97,11 @@
   margin-top: 15%;
   margin-bottom: 5%;
 }
+
+.col-sm-12 > pre {
+  white-space: nowrap;
+}
+
 .col-sm-10 > pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
@@ -104,6 +109,7 @@
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+
 footer {
   position: absolute;
   bottom: 10px;
