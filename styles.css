@@ -1,58 +1,111 @@
-@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
-
-body {
-  margin: 10%;
-  background-color: #008db6;
-  background-image: linear-gradient(161deg, #008db6 0%, #35005f 100%);
-  background-attachment: fixed;
-  font-family: 'Orbitron', sans-serif !important;
-  font-size: 15pt;
-  color: #ffffff;
-}
-.container, #home, #about, #portfolio, #connect {
+.switch-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#home, #about, #portfolio, #connect {
-  width: 100%;
-  border: 1px solid #fff;
+  top: 10px;
+  right: 10px;
 }
 
-.nav-custom {
-  font-variant: small-caps;
-  margin-bottom: 50px;
-}
-
-.nav-custom > li > a:link, a:visited {
-  background: rgba(0,0,0,0.0) !important;
-}
-
-.nav-custom > li > a:hover, a:active {
-  text-decoration: underline;
-  color: #fff;
-}
-
-a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-}
-a:link, a:visited {
-  color: #fff;
-}
-a:hover, a:active {
-  color: #ddd;
-}
-
-.col-sm-8 {
-  height: 200px;
+.onoffswitch {
   position: relative;
+  width: 75px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-body, #about, #portfolio, #connect {
+.onoffswitch-checkbox {
   display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 25px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 25px;
+  padding: 0;
+  line-height: 25px;
+  font-size: 13px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 5px;
+  background-color: #00AA00;
+  color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 5px;
+  background-color: #AAAAAA;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 15px;
+  margin: 5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 46px;
+  border: 2px solid #999999;
+  border-radius: 25px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.body-dark,
+.pre-dark {
+  background-color: #000;
+  color: #0a0;
+}
+
+.pre-dark {
+  border-color: #070 !important;
+}
+
+.container {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.col-sm-10 > pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

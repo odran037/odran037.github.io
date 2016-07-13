@@ -31,26 +31,18 @@
     <title>odran037.io</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <style>
-    .container {
-      margin-top: 15%;
-	  margin-bottom: 5%;
-    }
-    .col-sm-10 > pre {
-      white-space: pre-wrap;
-      white-space: -moz-pre-wrap;
-      white-space: -pre-wrap;
-      white-space: -o-pre-wrap;
-      word-wrap: break-word;
-    }
-    footer {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="switch-container">
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+    </div>
     <div class="container">
       <div class="col-sm-12">
 <pre>
@@ -109,5 +101,19 @@ Contact: <a href="http://goo.gl/forms/O0ufSOna9C2WmDfH3" target="_blank">http://
         </a>
       </h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    $('#myonoffswitch').on('click', function() {
+      if (!$(this).prop('checked')) {
+        $('body').addClass('body-dark');
+        $('pre').addClass('pre-dark');
+        $('a').addClass('text-success');
+      } else {
+        $('body').removeClass('body-dark');
+        $('pre').removeClass('pre-dark');
+        $('a').removeClass('text-success');
+      }
+    });
+    </script>
   </body>
 </html>
