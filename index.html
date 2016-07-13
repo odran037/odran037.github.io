@@ -45,7 +45,7 @@
     </div>
     <div class="container">
       <div class="col-sm-12">
-<pre>
+<pre id="banner">
            _                  ___ ____ ______ _
           | |                / _ \___ \____  (_)
   ___   __| |_ __ __ _ _ __ | | | |__) |  / / _  ___
@@ -68,7 +68,7 @@ I'm also a Python enthusiast and learning all things backend and devops.
 </pre>
       </div>
       <div class="col-sm-2">
-        <h3>Portfolio</h3>
+        <h3>Projects</h3>
       </div>
       <div class="col-sm-10">
 <pre>
@@ -80,6 +80,7 @@ I'm also a Python enthusiast and learning all things backend and devops.
 <a href="http://codepen.io/odran037/pen/mVBYXv" target="_blank">Wikipedia Viewer</a> - jQuery, SCSS, Jade
 <a href="http://codepen.io/odran037/pen/zGLKKR" target="_blank">Random Facts Machine</a> - jQuery, Stylus, Jade, API
 <a href="http://codepen.io/odran037/pen/MKzJdq" target="_blank">Twitch Streamers</a> - Angular, Stylus, Jade
+<a href="http://leonardoprates.com" target="_blank">Personal Landing Page</a> - jQuery, Bootswatch, Font Awesome
 </pre>
       </div>
       <div class="col-sm-2">
@@ -94,13 +95,13 @@ Contact: <a href="http://goo.gl/forms/O0ufSOna9C2WmDfH3" target="_blank">http://
 </pre>
       </div>
     </div>
-    <footer>
+    <!-- <footer>
       <h3>
         <a href="http://leonardoprates.com">
           <span class="glyphicon glyphicon-flash"></span>
         </a>
       </h3>
-    </footer>
+    </footer> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
     $('#myonoffswitch').on('click', function() {
@@ -113,6 +114,10 @@ Contact: <a href="http://goo.gl/forms/O0ufSOna9C2WmDfH3" target="_blank">http://
         $('pre').removeClass('pre-dark');
         $('a').removeClass('text-success');
       }
+    });
+    $('#banner').on('click', function() {
+      // window.location.href = 'http://leonardoprates.com';
+      window.open('http://leonardoprates.com','_blank');
     });
     </script>
   </body>
