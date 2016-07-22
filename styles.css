@@ -97,6 +97,8 @@ samp {
   background: rgba(0, 0, 0, 0.0);
   color: #fff;
   font-weight: 600;
+  line-height: 23px;
+  letter-spacing: -1px;
 }
 
 q {
