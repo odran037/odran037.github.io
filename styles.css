@@ -724,7 +724,7 @@ pre code {
 }
 
 .toc a:hover {
-  text-decoration: none;
+  text-decoration: underline;;
   border-radius: 3px;
 }
 
