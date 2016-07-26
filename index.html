@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>odran037.io</title>
   </head>
-  <body>
+  <body onload="start()">
     <header class="masthead">
       <div class="masthead-inner">
         <h1 class="header-divider">odran037.io</h1>
@@ -50,15 +50,16 @@
     </header>
     <div class="container">
       <section id="banner">
-<pre>
-           _                  ___ ____ ______ _
+<pre id="banner-print" style="height: 161px;">
+</pre>
+           <!-- _                  ___ ____ ______ _
           | |                / _ \___ \____  (_)
   ___   __| |_ __ __ _ _ __ | | | |__) |  / / _  ___
  / _ \ / _` | '__/ _` | '_ \| | | |__ <  / / | |/ _ \
 | (_) | (_| | | | (_| | | | | |_| |__) |/ / _| | (_) |
  \___/ \__,_|_|  \__,_|_| |_|\___/____//_/ (_)_|\___/
 
-</pre>
+</pre> -->
       </section>
       <section id="about">
         <h1 class="header-divider">Hello!</h1>
@@ -81,6 +82,7 @@
         </ul>
       </section>
     </div>
+    <script src="printBanner.js"></script>
     <script src="consoleAscii.js"></script>
   </body>
 </html>
