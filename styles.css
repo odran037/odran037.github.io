@@ -91,7 +91,8 @@ samp {
   font-size: 1em;
 }
 
-#banner > pre {
+#banner-print {
+  height: 161px;
   border: 0;
   padding: 0px;
   background: rgba(0, 0, 0, 0.0);
