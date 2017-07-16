@@ -1,4 +1,4 @@
-article,
+/*article,
 aside,
 details,
 figcaption,
@@ -916,4 +916,44 @@ pre code {
   .masthead h1 {
     font-size: 60px;
   }
+}*/
+
+body {
+  padding: 0;
+  font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #008db6;
+  background-image: linear-gradient(161deg, #008db6 0%, #35005f 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.container {
+  width: 100;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+pre {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+#banner-type {
+  height: 161px;
+  border: 0;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.0);
+  color: #fff;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: -1px;
+}
+
+#rant {
+  text-align: center;
 }
