@@ -2,11 +2,14 @@ var banner = '\n           _                  ___ ____ ______ _\n          | |  
 var rant = ['\n\n\nI was born a dreamer.',
             '\nA wad of cookie dough.',
             '\n\nToday I am a man of action.',
-            '\nCarved out of wood.'];
+            '\nCarved out of wood.\n\n\n',
+            '<a href="https://github.com/odran037/contact-me"><i class="fa fa-paper-plane"></i></a>'];
 
 function typeOut(c, t, el) {
   setTimeout(function() {
-    document.getElementById(el).innerText += c;
+    t < 320 ? 
+    document.getElementById(el).innerText += c:
+    document.getElementById(el).innerHTML += c;
   }, t * 50);
 }
 

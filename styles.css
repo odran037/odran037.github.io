@@ -931,7 +931,6 @@ body {
 }
 
 .container {
-  width: 100;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -954,6 +953,14 @@ pre {
   letter-spacing: -1px;
 }
 
-#rant {
+p {
   text-align: center;
+}
+
+a:link, a:visited {
+  color: #fff;
+}
+
+a:hover, a:active {
+  color: #ccc;
 }
