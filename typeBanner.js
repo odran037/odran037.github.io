@@ -22,8 +22,5 @@ function start() {
       typeOut(rant[j], i, 'rant');
       j++;
     }
-    // i === banner.length - 1 ?
-    // typeOut(banner[i], i, true) :
-    // typeOut(banner[i], i, false);
   }
 }
