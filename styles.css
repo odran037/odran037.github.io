@@ -930,7 +930,7 @@ body {
   color: #ffffff;
 }
 
-.container {
+/*.container {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -963,4 +963,4 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #ccc;
-}
+}*/
