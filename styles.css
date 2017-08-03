@@ -930,14 +930,14 @@ body {
   color: #ffffff;
 }
 
-/*.container {
+.container {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-pre {
+/*pre {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -955,7 +955,7 @@ pre {
 
 p {
   text-align: center;
-}
+}*/
 
 a:link, a:visited {
   color: #fff;
@@ -963,4 +963,4 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #ccc;
-}*/
+}
