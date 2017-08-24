@@ -21,4 +21,4 @@
    █████████████████████████████████
 ```
 
-[odran037.io](http://odran037.io)
+[odran037.github.io](http://odran037.github.io)
