@@ -1,8 +1,5 @@
 * { box-sizing: border-box; }
-/*body {
-  background: #000;
-  color: #ffcc00;
-}*/
+
 div {
   position: absolute;
   top: 50%;
@@ -33,13 +30,18 @@ a {
   color: #ffcc00;
   font-family: 'Source Code Pro', sans-serif;
   letter-spacing: 2px;
-}
-a:link, a:visited {
+  cursor: pointer;
   color: #fff;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #000;
+  padding-bottom: 4px;
 }
-a:hover, a:active {
-  text-decoration: underline;
+
+a:hover {
+  border-color: #fff;
 }
+
 @media only screen and (max-width: 700px) {
   div {
     top: 30%;
