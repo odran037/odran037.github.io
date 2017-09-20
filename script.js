@@ -33,10 +33,6 @@ a.forEach(function(link) {
 });
 body.appendChild(div);
 
-body.style.background = '#000';
-body.style.color = '#ffcc00';
-
-
 function getRandomCharacter(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -65,14 +61,17 @@ setInterval(function() {
 
 document.querySelectorAll('a').forEach(function(e) {
   e.addEventListener('mouseenter', function() {
-
     var initial = this.innerText;
     var len = initial.length;
 
     for (let i = 0; i < 10; i++) {
-      setTimeout(() => this.innerText = generate(len, 97, 122), i * 10);
+      setTimeout(function() {
+        e.innerText = generate(len, 97, 122);
+      }, i * 10);
     }
 
-    setTimeout(() => this.innerText = initial, 100);
+    setTimeout(function() {
+      e.innerText = initial;
+    }, 100);
   });
 });
