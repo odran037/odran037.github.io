@@ -93,15 +93,44 @@
   </head>
 
   <body>
-    <div>
-      <h1>odran<small>037</small></h1>
-      <br/>
-      <p>53662736772837</p>
-      <a href="https://github.com/odran037" target="_blank">github</a>
-      <a href="https://codepen.io/odran037" target="_blank">codepen</a>
-      <a href="https://odran037.glitch.me" target="_blank">glitch</a>
-    </div>
+
     <script>
+      var body = document.body;
+      var div = document.createElement('div');
+      var h1 = document.createElement('h1');
+      var h1Text = document.createTextNode('odran');
+      var small = document.createElement('small');
+      var smallText = document.createTextNode('037');
+      var br = document.createElement('br');
+      var p = document.createElement('p');
+      var pText = document.createTextNode('53662736772837');
+      var links = [
+        { title: 'github', url: 'https://github.com/odran037'},
+        { title: 'codepen', url: 'https://codepen.io/odran037'},
+        { title: 'glitch', url: 'https://odran037.glitch.me'}
+      ];
+      var a = links.map(function(link) {
+        var tag = document.createElement('a');
+        var tagText = document.createTextNode(link.title);
+        tag.appendChild(tagText);
+        tag.href = link.url;
+        tag.target = '_blank';
+        return tag;
+      });
+      
+      h1.appendChild(h1Text);
+      small.appendChild(smallText);
+      h1.appendChild(small);
+      p.appendChild(pText);
+      div.appendChild(h1);
+      div.appendChild(br);
+      div.appendChild(p);
+      a.forEach(function(link) {
+        div.appendChild(link);
+      });
+      body.appendChild(div);
+
+
       function getRandomCharacter(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
