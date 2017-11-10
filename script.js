@@ -10,7 +10,7 @@ var pText = document.createTextNode('53662736772837');
 var links = [
   { title: 'github', url: 'https://github.com/odran037'},
   { title: 'codepen', url: 'https://codepen.io/odran037'},
-  { title: 'glitch', url: 'https://odran037.glitch.me'}
+  { title: 'glitch', url: 'https://glitch.com/@odran037'}
 ];
 var a = links.map(function(link) {
   var tag = document.createElement('a');
