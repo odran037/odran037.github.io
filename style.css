@@ -3,7 +3,8 @@
 }
 
 body {
-  background: #000;
+  background: url('https://source.unsplash.com/featured/?nature,landscape') no-repeat 50% 50% fixed;
+  background-size: cover;
   color: #ffcc00;
 }
 
@@ -22,6 +23,10 @@ h1 {
   font-size: 6.5em;
   font-weight: 700;
   margin: 0;
+  background: #000;
+  display: inline-block;
+  padding: 0 15px 10px 15px;
+  box-shadow: 1px 1px 3px #000;
 }
 
 p {
@@ -45,7 +50,11 @@ a {
   border-width: 1px 0 1px 0;
   border-style: solid;
   border-color: #000;
+  padding-left: 7px;
+  padding-right: 5px;
   padding-bottom: 4px;
+  background: #000;
+  box-shadow: 1px 1px 3px #000;
 }
 
 a:hover {

@@ -8,16 +8,22 @@ var br = document.createElement('br');
 var p = document.createElement('p');
 var pText = document.createTextNode('53662736772837');
 var links = [
-  { title: 'github', url: 'https://github.com/odran037'},
-  { title: 'codepen', url: 'https://codepen.io/odran037'},
-  { title: 'glitch', url: 'https://glitch.com/@odran037'}
+  { title: 'github', url: 'https://github.com/odran037' },
+  { title: 'codepen', url: 'https://codepen.io/odran037' },
+  { title: 'glitch', url: 'https://glitch.com/@odran037' },
+  { title: 'refresh', url: false }
 ];
 var a = links.map(function(link) {
   var tag = document.createElement('a');
   var tagText = document.createTextNode(link.title);
   tag.appendChild(tagText);
-  tag.href = link.url;
-  tag.target = '_blank';
+  if (link.url) {
+    tag.href = link.url;
+    tag.target = '_blank';
+  } else {
+    tag.href = '#';
+    tag.id = 'reload';
+  }
   return tag;
 });
 
@@ -74,4 +80,8 @@ document.querySelectorAll('a').forEach(function(e) {
       e.innerText = initial;
     }, 100);
   });
+});
+
+document.getElementById('reload').addEventListener('click', function() {
+  window.location.reload();
 });
