@@ -5,7 +5,8 @@
 body {
   background: url('https://source.unsplash.com/featured/?nature,landscape') no-repeat 50% 50% fixed;
   background-size: cover;
-  color: #ffcc00;
+  /*color: #ffcc00;*/
+  color: #009fad;
 }
 
 div {
@@ -22,10 +23,11 @@ h1 {
   font-variant: small-caps;
   font-size: 6.5em;
   font-weight: 700;
+  font-style: italic;
   margin: 0;
-  background: #000;
+  background: rgba(0,0,0,0.8);
   display: inline-block;
-  padding: 0 15px 10px 15px;
+  padding: 0 28px 10px 15px;
   box-shadow: 1px 1px 3px #000;
 }
 
@@ -53,7 +55,7 @@ a {
   padding-left: 7px;
   padding-right: 5px;
   padding-bottom: 4px;
-  background: #000;
+  background: rgba(0,0,0,0.8);
   box-shadow: 1px 1px 3px #000;
 }
 
