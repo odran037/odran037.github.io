@@ -46,4 +46,3 @@ document.querySelectorAll('.link').forEach((e) => {
   });
 
 });
-window.addEventListener('click', () => window.location.reload());
