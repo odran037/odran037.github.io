@@ -63,7 +63,7 @@ a {
   padding-bottom: 4px;
   background: rgba(0,0,0,0.8);
   box-shadow: 1px 1px 3px #000;
-  width: 125px;
+  width: 150px;
 }
 
 a:hover {
@@ -85,6 +85,6 @@ a:hover {
   }
 
   a {
-    width: 90px;
+    width: 100px;
   }
 }
