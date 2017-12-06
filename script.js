@@ -15,11 +15,13 @@ const generate = (limit, min, max) => {
 
 setInterval(() => {
 
+  let initial = document.querySelector('#n').innerText;
+
   for (let i = 0; i < 100; i++) {
     setTimeout(() => document.querySelector('#n').innerText = generate(14, 48, 57), i * 10);
   }
 
-  setTimeout(() => document.querySelector('#n').innerText = '53662736772837', 1000);
+  setTimeout(() => document.querySelector('#n').innerText = initial, 1000);
 
 }, 5000);
 
