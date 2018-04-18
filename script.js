@@ -13,9 +13,9 @@ const generate = (limit, min, max) => {
 };
 
 
-setInterval(() => {
+setInterval(function() {
 
-  let initial = document.querySelector('#n').innerText;
+  let initial = document.querySelector('#n').getAttribute('data-initial');
   let len = initial.length;
 
   for (let i = 0; i < 100; i++) {
@@ -26,11 +26,11 @@ setInterval(() => {
 
 }, 5000);
 
-document.querySelectorAll('.link').forEach((e) => {
+document.querySelectorAll('.link').forEach(function(e) {
 
   e.addEventListener('mouseenter', () => {
 
-    let initial = e.innerText;
+    let initial = e.getAttribute('data-initial');
     let len = initial.length;
 
     for (let i = 0; i < 10; i++) {
