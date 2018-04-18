@@ -18,11 +18,18 @@ setInterval(function() {
   let initial = document.querySelector('#n').getAttribute('data-initial');
   let len = initial.length;
 
-  for (let i = 0; i < 100; i++) {
-    setTimeout(() => document.querySelector('#n').innerText = generate(len, 48, 57), i * 10);
+  for (let i = 0; i < 100; i++) { 
+    setTimeout(() => {
+      let gen = generate(len, 48, 57);
+      document.querySelector('#n').innerText = gen;
+      document.title = gen;
+    }, i * 10);
   }
 
-  setTimeout(() => document.querySelector('#n').innerText = initial, 1000);
+  setTimeout(() => {
+    document.querySelector('#n').innerText = initial;
+    document.title = initial;
+  }, 1000);
 
 }, 5000);
 
