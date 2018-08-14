@@ -1,3 +1,17 @@
+window.onload = (icon) => {
+  let titleIcon = document.getElementById('title-icon');
+  let titleAlt = document.getElementById('title-alt');
+  let icons = ['github', 'gitlab', 'bitbucket'];
+  let host = window.location.hostname;
+  icons.forEach((icon) => {
+    if (host.includes(icon) {
+      titleIcon.className = `fa fa-${icon}`;
+    } else {
+      titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="fa fa-${icon}"></i></a>`);
+    }
+  });
+}
+
 const getRandomCharacter = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const generate = (limit, min, max) => {
