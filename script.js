@@ -8,7 +8,8 @@ window.onload = (icon) => {
     if (host.includes(icon)) {
       titleIcon.className = `fa fa-${icon}`;
     } else {
-      titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="fa fa-${icon}"></i></a>`);
+      titleIcon.textContent = 'localhost';
+      titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="text-dark fa fa-${icon}"></i></a>`);
     }
   });
 }
