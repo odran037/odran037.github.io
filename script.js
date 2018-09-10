@@ -6,10 +6,11 @@ window.onload = (icon) => {
 
   icons.forEach((icon) => {
     if (host.includes(icon)) {
-      titleIcon.className = `fa fa-${icon}`;
+      // titleIcon.className = `fa fa-${icon}`;
+      titleIcon.textContent = icon;
     } else {
       titleIcon.textContent = 'localhost';
-      titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="text-dark fa fa-${icon}"></i></a>`);
+      // titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="text-dark fa fa-${icon}"></i></a>`);
     }
   });
 }
