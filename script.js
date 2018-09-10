@@ -3,18 +3,17 @@ window.onload = (icon) => {
   let titleAlt = document.getElementById('title-alt');
   let icons = ['github', 'gitlab', 'bitbucket'];
   let host = window.location.hostname;
-  console.log('asdf', host)
 
-  icons.forEach((icon) => {
-    console.log('host', host.includes(icon));
-    if (host.includes(icon)) {
-      // titleIcon.className = `fa fa-${icon}`;
-      titleIcon.textContent = icon;
-    } else {
-      titleIcon.textContent = 'localhost';
-      // titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="text-dark fa fa-${icon}"></i></a>`);
-    }
-  });
+  titleIcon.textContent = icons.filter(icon => host.includes(icon))[0] || 'localhost';
+
+  // icons.forEach((icon) => {
+  //   if (host.includes(icon)) {
+  //     titleIcon.className = `fa fa-${icon}`;
+  //   } else {
+  //     titleIcon.textContent = 'localhost';
+  //     titleAlt.insertAdjacentHTML('beforeend', `<a href="https://odran037.${icon}.io"><i class="text-dark fa fa-${icon}"></i></a>`);
+  //   }
+  // });
 }
 
 const getRandomCharacter = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
