@@ -3,9 +3,11 @@ window.onload = (icon) => {
   let titleAlt = document.getElementById('title-alt');
   let icons = ['github', 'gitlab', 'bitbucket'];
   let host = window.location.hostname;
+  console.log('asdf', host)
 
   icons.forEach((icon) => {
     if (host.includes(icon)) {
+      console.log('host', host.includes(icon));
       // titleIcon.className = `fa fa-${icon}`;
       titleIcon.textContent = icon;
     } else {
