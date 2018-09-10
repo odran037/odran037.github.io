@@ -14,23 +14,52 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p class="mt-3 ml-4"><i class="fa fa-bicycle"></i></p>
-    <div class="container mt-4 mb-4 pt-4 pb-4">
+    <header>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <i class="fa fa-bicycle fa-2x text-warning mr-2"></i>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link main-nav" href="#">odran037.<i id="title-icon" class="text-white">hostname</i>.io</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-github"></i>
+              </a>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-bitbucket"></i>
+              </a>
+              <a class="btn btn-success" href="#">
+                <i class="fa fa-gitlab"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0">
+            <p class="my-2 my-sm-0" id="n" data-initial="53662736772837">53662736772837</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4 mb-4 pt-4 pb-4">
       <div class="row justify-content-md-center mt-4 mb-4">
-        <div class="col col-lg-8 mt-4 mb-4">
-          <h1 class="display-4 mb-0">
-            <span>odran037.<i id="title-icon"></i>.io</span>
-            <br>
-            <small id="title-alt"></small>
-          </h1>
-          <p id="n" data-initial="53662736772837">53662736772837</p>
-          <a class="link text-dark" href="https://github.com/odran037" target="_blank" data-initial="github">github</a>
-          <a class="link text-dark" href="https://codepen.io/odran037" target="_blank" data-initial="codepen">codepen</a>
-          <a class="link text-dark" href="https://glitch.com/@odran037" target="_blank" data-initial="glitch">glitch</a>
-          <a class="link text-dark" href="https://keybase.io/odran037/key.asc" target="_blank" data-initial="gpg">gpg</a>
+        <div class="col col-lg-6 mt-4 mb-4">
+          <p class="text-white">Be in this life as if you were a stranger or a traveler on a path.</p>
+          <p class="text-white">If you reach the evening, do not expect to reach the morning, and if you reach the morning,
+            do not expect to reach the evening. Take from your health before your sickness and from your life before your
+            death.</p>
         </div>
       </div>
-    </div>
+    </main>
+
+    <footer class="container col-md-6 text-center">
+      <hr class="border border-dark">
+      <a class="link text-white sc" href="https://github.com/odran037" target="_blank" data-initial="github">github</a>
+      <a class="link text-white sc" href="https://codepen.io/odran037" target="_blank" data-initial="codepen">codepen</a>
+      <a class="link text-white sc" href="https://glitch.com/@odran037" target="_blank" data-initial="glitch">glitch</a>
+      <a class="link text-white sc" href="https://keybase.io/odran037/key.asc" target="_blank" data-initial="gpg">gpg</a>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
