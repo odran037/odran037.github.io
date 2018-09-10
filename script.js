@@ -6,8 +6,8 @@ window.onload = (icon) => {
   console.log('asdf', host)
 
   icons.forEach((icon) => {
+    console.log('host', host.includes(icon));
     if (host.includes(icon)) {
-      console.log('host', host.includes(icon));
       // titleIcon.className = `fa fa-${icon}`;
       titleIcon.textContent = icon;
     } else {
