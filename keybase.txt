@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/odran037
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://odran037.gitlab.io
+  * I am odran037 (https://keybase.io/odran037) on keybase.
+  * I have a public key ASA3o7biHaXf49ruN5tKKPD7rNN9y70naVFPF4mmq3HtzAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120131f24639c0e19d174741c5c666f15c99ba8a427414ef483a5bb6d0238333e5c0a",
+      "host": "keybase.io",
+      "kid": "012037a3b6e21da5dfe3daee379b4a28f0fbacd37dcbbd2769514f1789a6ab71edcc0a",
+      "uid": "e31a872631d83eff40b1d530ab9c2519",
+      "username": "odran037"
+    },
+    "merkle_root": {
+      "ctime": 1534196462,
+      "hash": "048e7464f8a2aba27dc6b0e45d5cb66d17ca8d4f9be1585f7b67cc552953be5cf8d2b86ee6cc991c6fb7b7f134dcbb46e392c6867a1614c6a964b78d41cbb73f",
+      "hash_meta": "51b2a2639f20c92572a3e876843cc514b8acab798df7c650e66e4ce9421d18e1",
+      "seqno": 3450964
+    },
+    "service": {
+      "entropy": "a70wzBsffQgO16FU0LbXZxtw",
+      "hostname": "odran037.gitlab.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.0"
+  },
+  "ctime": 1534196476,
+  "expire_in": 504576000,
+  "prev": "9b0ebad5023abc857bc13b0c4cbacf5112a1f9a31ae19a0c2c0913ec230e2bb7",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN6O24h2l3+Pa7jebSijw+6zTfcu9J2lRTxeJpqtx7cwKp3BheWxvYWTESpcCEMQgmw661QI6vIV7wTsMTLrPURKh+aMa4ZoMLAkT7CMOK7fEIKLitm7ach2gdPMZ+DfN9W7eLvONwAzouW1Rln57BaoCAgHCo3NpZ8RAz6qFK87GJCFcnPc6PlZSFYBhbPhrX/dttjkcKnLX6lEfVrLZMP7mrUfWITZ0c60ZiEZlz3wdT+GS4XzyUA+BBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBYshDM6Se05ioXaeJWHc7OhDoJDz111xwVDrakZ+JoRo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/odran037
+
+==================================================================
