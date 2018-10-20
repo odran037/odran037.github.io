@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <noscript>
+      <meta http-equiv="refresh" content="5; url=https://leonardoprates.github.io" />
+    </noscript>
+    <title data-initial="53662736772837">53662736772837</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin: 10%;
+        background: #000;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        font-family: 'Play', monospace;
+      }
+      i {
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <i class="fa fa-bicycle"></i><br>
+      odran037<br><span id="countdown"></span>
+    </h1>
+    <script>
+      [
+        "_ _ _",
+        ". . . . _",
+        ". . . _ .",
+        ". . _ . .",
+        ". _ _ .",
+        // () => window.location.replace('https://leonardoprates.github.io')
+      ].forEach((n, i, s) => {
+        setTimeout(() => {
+          if (typeof n === 'function') {
+            n();
+          } else {
+            document.querySelector('#countdown').innerText = n;
+          }
+        }, i * 1000);
+      });
+    </script>
+  </body>
+</html>
+
