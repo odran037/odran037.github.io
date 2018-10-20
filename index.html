@@ -8,14 +8,14 @@
     <noscript>
       <meta http-equiv="refresh" content="5; url=https://leonardoprates.github.io" />
     </noscript>
-    <title data-initial="53662736772837">53662736772837</title>
+    <title>53662736772837</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {
-        margin: 10%;
+        margin: 5% 10%;
         background: #000;
         color: #fff;
       }
@@ -33,24 +33,26 @@
       <i class="fa fa-bicycle"></i><br>
       odran037<br><span id="countdown"></span>
     </h1>
+    <iframe src="https://barrenrepentantlocation.odran037.repl.run" frameborder="0" width="100%"></iframe>
     <script>
-      [
-        "_ _ _",
-        ". . . . _",
-        ". . . _ .",
-        ". . _ . .",
-        ". _ _ .",
-        () => window.location.replace('https://leonardoprates.github.io')
-      ].forEach((n, i, s) => {
-        setTimeout(() => {
-          if (typeof n === 'function') {
-            n();
-          } else {
-            document.querySelector('#countdown').innerText = n;
-          }
-        }, i * 1000);
-      });
+      setTimeout(() => {
+        [
+          "_ _ _",
+          ". . . . _",
+          ". . . _ .",
+          ". . _ . .",
+          ". _ _ .",
+          () => window.location.replace('https://leonardoprates.github.io')
+        ].forEach((n, i, s) => {
+          setTimeout(() => {
+            if (typeof n === 'function') {
+              n();
+            } else {
+              document.querySelector('#countdown').innerText = n;
+            }
+          }, i * 1000);
+        });
+      }, 1500);
     </script>
   </body>
 </html>
-
