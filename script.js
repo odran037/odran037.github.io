@@ -1,6 +1,6 @@
 const html = document.getElementsByTagName('html')[0]
-const head = document.createElement('head')
-const body = document.createElement('body')
+const head = document.querySelector('head')
+const body = document.querySelector('body')
 const elementsList = [
   {
     target: head,
