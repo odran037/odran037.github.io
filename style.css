@@ -1,14 +1,12 @@
 body {
   font-family: monospace;
   font-variant: small-caps !important;
-  font-size: 200%;
   background: #111;
-  color: #aaa;
+  margin: 5%;
 }
 
 p {
   width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  color: #aaa;
+  font-size: 200%;
 }
