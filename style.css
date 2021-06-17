@@ -1,6 +1,7 @@
 body {
   font-family: monospace;
   font-variant: small-caps !important;
+  font-size: 99%;
   background: #111;
   color: #aaa;
 }
