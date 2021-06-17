@@ -17,9 +17,6 @@ const elementsList = [
   {
     target: body,
     elements: [
-      { name: 'main', properties: [{ name: 'className', value: 'container mt-4 mb-4 pt-4 pb-4' }] },
-      { name: 'div', properties: [{ name: 'className', value: 'row justify-content-md-center mt-4 mb-4' }] },
-      { name: 'div', properties: [{ name: 'className', value: 'col col-lg-6 mt-4 mb-4' }] },
       { name: 'p', properties: [{ name: 'textContent', value: 'Be in this life as if you were a stranger or a traveler on a path.' }] },
       { name: 'p', properties: [{ name: 'textContent', value: 'If you reach the evening, do not expect to reach the morning, and if you reach the morning, do not expect to reach the evening. Take from your health before your sickness and from your life before your death.' }] }
     ]
