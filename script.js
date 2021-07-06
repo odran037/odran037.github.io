@@ -1,6 +1,7 @@
 const html = document.getElementsByTagName('html')[0]
 const head = document.querySelector('head')
 const body = document.querySelector('body')
+const div = document.querySelector('div')
 const elementsList = [
   {
     target: head,
@@ -15,7 +16,7 @@ const elementsList = [
     ]
   },
   {
-    target: body,
+    target: div,
     elements: [
       { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a stranger or a traveler on a path.' }] }
     ]
@@ -42,7 +43,8 @@ function domBuilder() {
       list.target.appendChild(element)
     })
 
-    html.appendChild(list.target)
+    body.appendChild(list.target)
+    html.appendChild(body)
   })
 }
 
