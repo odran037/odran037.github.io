@@ -5,8 +5,20 @@ body {
   margin: 5%;
 }
 
-p {
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
   color: #aaa;
   font-size: 200%;
+  margin: 0;
+}
+
+p:nth-child(2) {
+  text-align: right;
 }
