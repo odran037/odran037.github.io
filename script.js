@@ -16,7 +16,7 @@ const elementsList = [
     ]
   },
   {
-    target: div,
+    target: body,
     elements: [
       { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a stranger or a traveler on a path.' }] }
     ]
@@ -43,8 +43,7 @@ function domBuilder() {
       list.target.appendChild(element)
     })
 
-    body.appendChild(list.target)
-    html.appendChild(body)
+    html.appendChild(list.target)
   })
 }
 
