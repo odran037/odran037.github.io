@@ -19,14 +19,7 @@ const elementsList = [
     elements: [
 //       { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
 //       { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
-      { name: 'pre', properties: [{ name: 'textContent', value: `
-        _____           __
-   ____|__  /__  ______/ /
-  / ___//_ </ / / / __  / 
- (__  )__/ / /_/ / /_/ /  
-/____/____/\__,  /\\__,_/   
-          /____/          
-` }] }
+      { name: 'img', properties: [{ name: 'src', value: 'odran037.png' }] }
     ]
   }
 ]
