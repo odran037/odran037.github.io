@@ -14,14 +14,14 @@ const elementsList = [
       { name: 'link', attributes: [{ name: 'rel', value: 'stylesheet' }, { name: 'href', value: 'style.css' }] }
     ]
   },
-  {
-    target: div,
-    elements: [
+//  {
+//    target: div,
+//    elements: [
 //       { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
 //       { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
-      { name: 'img', properties: [{ name: 'src', value: 'odran037.png' }] }
-    ]
-  }
+//      { name: 'img', properties: [{ name: 'src', value: 'odran037.png' }] }
+//    ]
+//  }
 ]
 
 function domBuilder() {
