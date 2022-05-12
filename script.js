@@ -1,6 +1,28 @@
 const head = document.querySelector('head')
 const body = document.querySelector('body')
 const div = document.createElement('div')
+const ascii = `
+╔═══════════════════════════════╗   
+║                               ║   
+║ 037                         6 ║███
+║                             e ║███
+║     ###                     c ║███
+║     ###                     h ║███
+║     ###                       ║███
+║     ###       ###########     ║███
+║     ###       ###       ##    ║███
+║     ###       ###       ##    ║███
+║     ##########Wo6########     ║███
+║               ###             ║███
+║               ###             ║███
+║               ###             ║███
+║                               ║███
+║        53662736:772837        ║███
+║                               ║███
+╚═══════════════════════════════╝███
+   █████████████████████████████████
+   █████████████████████████████████
+`;
 const elementsList = [
   {
     target: head,
@@ -14,14 +36,14 @@ const elementsList = [
       { name: 'link', attributes: [{ name: 'rel', value: 'stylesheet' }, { name: 'href', value: 'style.css' }] }
     ]
   },
-//  {
-//    target: div,
-//    elements: [
-//       { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
-//       { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
-//      { name: 'img', properties: [{ name: 'src', value: 'odran037.png' }] }
-//    ]
-//  }
+  {
+   target: body,
+   elements: [
+     { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
+     { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
+     { name: 'pre', properties: [{ name: 'innerText', value: ascii }] }
+   ]
+  }
 ]
 
 function domBuilder() {
