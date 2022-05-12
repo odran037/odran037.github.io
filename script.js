@@ -1,3 +1,4 @@
+const html = document.querySelector('html')
 const head = document.querySelector('head')
 const body = document.querySelector('body')
 const div = document.createElement('div')
@@ -65,8 +66,9 @@ function domBuilder() {
 
       list.target.appendChild(element)
     })
-
-    body.appendChild(list.target)
+    
+    
+    html.appendChild(list.target)
   })
 }
 
