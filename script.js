@@ -40,8 +40,8 @@ const elementsList = [
   {
    target: body,
    elements: [
-     { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
-     { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
+     // { name: 'p', properties: [{ name: 'innerHTML', value: 'Be in this life as if you were a' }] },
+     // { name: 'p', properties: [{ name: 'innerHTML', value: 'stranger or a traveler on a path.' }] },
      { name: 'pre', properties: [{ name: 'innerText', value: ascii }] }
    ]
   }
