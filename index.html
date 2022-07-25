@@ -1,6 +1,140 @@
+<!-- 
+╔═══════════════════════════════╗   
+║                               ║   
+║ 037                         6 ║███
+║                             e ║███
+║     ###                     c ║███
+║     ###                     h ║███
+║     ###                       ║███
+║     ###       ###########     ║███
+║     ###       ###       ##    ║███
+║     ###       ###       ##    ║███
+║     ##########Wo6########     ║███
+║               ###             ║███
+║               ###             ║███
+║               ###             ║███
+║                               ║███
+║        53662736:772837        ║███
+║                               ║███
+╚═══════════════════════════════╝███
+   █████████████████████████████████
+   █████████████████████████████████
+-->
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head></head>
-  <body></body>
-  <script src="script.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>53662736772837</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&amp;display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Source Code Pro", monospace;
+      }
+
+      section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1rem;
+      }
+
+      main {
+        width: 50%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h1>span,
+      p {
+        color: #fff !important;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .accent {
+        font-weight: 900;
+      }
+
+      a:link,
+      a:visited {
+        color: #606060;
+        font-size: 1rem;
+        text-decoration: none;
+        text-decoration: underline;
+      }
+
+      a:hover,
+      a:active {
+        text-decoration: underline;
+        color: #fff;
+      }
+
+      button {
+        border: 1px solid #000;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        border: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <button style="background: #00e2ff;">&nbsp;</button>
+      <button style="background: #00ff71;">&nbsp;</button>
+      <button style="background: #008080;">&nbsp;</button>
+      <button style="background: #f4b541;">&nbsp;</button>
+      <button style="background: #ff7800;">&nbsp;</button>
+      <button style="background: #ef0909;">&nbsp;</button>
+    </section>
+
+    <main>
+      <h1 class="accent">
+        [<span>LNRD PRTS</span>]
+      </h1>
+      <p>Software Engineer <span class="accent">/</span> QA Automation Engineer</p>
+      <a href="https://github.com/odran037" target="_blank">GitHub</a>
+      <span class="accent">:</span>
+      <a href="https://skyline.github.com/odran037" target="_blank">Commits</a>
+      <span class="accent">:</span>
+      <a href="http://www.linkedin.com/in/odran037" target="_blank">LinkedIn</a>
+      <span class="accent">:</span>
+      <a href="https://keybase.io/odran037/key.asc" target="_blank">Keybase</a>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll("button");
+      const accent = document.querySelectorAll(".accent");
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          accent.forEach(e => e.style.color = button.style.backgroundColor);
+        });
+      });
+      const startColor =
+        buttons[Math.floor(Math.random() * buttons.length)].style.backgroundColor;
+      accent.forEach(e => e.style.color = startColor);
+    </script>
+  </body>
 </html>
