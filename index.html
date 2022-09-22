@@ -99,6 +99,7 @@
       }
     </style>
   </head>
+
   <body>
     <section>
       <button style="background: #00ff71;">&nbsp;</button>
@@ -113,7 +114,7 @@
       <h1 class="accent">
         [<span>LNRD PRTS</span>]
       </h1>
-      <p>53662736772837</p>
+      <p id="n">53662736772837</p>
       <a href="https://github.com/odran037" target="_blank">GitHub</a>
       <span class="accent">:</span>
       <a href="https://skyline.github.com/odran037" target="_blank">Commits</a>
@@ -126,14 +127,50 @@
     <script>
       const buttons = document.querySelectorAll("button");
       const accent = document.querySelectorAll(".accent");
+
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
           accent.forEach(e => e.style.color = button.style.backgroundColor);
         });
       });
+
       const startColor =
         buttons[Math.floor(Math.random() * buttons.length)].style.backgroundColor;
+
       accent.forEach(e => e.style.color = startColor);
+
+      const n = document.getElementById('n');
+
+      const getRandomCharacter = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1)) + min;
+
+      const generate = (limit, min, max) => {
+        let charactersList = [];
+
+        do {
+          charactersList.push(String.fromCharCode(getRandomCharacter(min, max)));
+        } while (--limit);
+
+        return charactersList.join('');
+      };
+
+      setInterval(() => {
+        let initial = n.getAttribute('data-initial');
+        let len = initial.length;
+
+        for (let i = 0; i < 100; i++) {
+          setTimeout(() => {
+            let gen = generate(len, 48, 57);
+            n.innerText = gen;
+            document.title = gen;
+          }, i * 10);
+        }
+
+        setTimeout(() => {
+          n.innerText = initial;
+          document.title = initial;
+        }, 1000);
+      }, 5000);
     </script>
   </body>
 </html>
